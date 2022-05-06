@@ -27,7 +27,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='/') Home
+                a.navbar-brand(href='#') Akasaruci Art
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -43,16 +43,14 @@ html(lang='en')
                             a.nav-link(href='#photography') Photography
 
         // Masthead
-        header.masthead
+        header.masthead.light-background
             .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
                 .d-flex.justify-content-center
-                    .text-center
-                        h1.mx-auto.my-0.text-uppercase Akasaruci Art
-                        h2.text-white-50.mx-auto.mt-3.mb-6 Seascapes, Landscapes and Skyscapes of Argyll.
-                        h2.text-white-50.mx-auto.mt-3.mb-6 New website coming soon!
+                    h2.mb-4 Coming soon
+                    
 
         // About
-        section#about.about-section.text-center
+        section#about.about-section.text-center.dark-background
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
@@ -62,47 +60,47 @@ html(lang='en')
 
 
         // Section - Canvas
-        section#canvas.projects-section.bg-light
+        section#canvas.gallery-section.light-background
             .container.px-4.px-lg-5
                 // Featured Canvas
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/2.jpg', alt='...')
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/1.jpg', alt='...')
                     .col-xl-4.col-lg-5
                         .featured-text.text-center.text-lg-left
                             h4 Canvas
                             p.text-black-50.mb-0
                                 | &quot;My paintings are often abstract and non-representational, sometimes with anchors of sea, sky or land, to offer the viewer the opportunity to reconnect with their own emotional memories of being in nature.&quot;
-                // Project One Row
+                // Canvas Row One
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/3.jpg', alt='...')
+                        img.img-fluid(src='assets/img/2.jpg', alt='...')
                     .col-lg-6
-                        .bg-black.text-center.h-100.project
+                        .dark-background.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                .gallery-text.w-100.my-auto.text-center.text-lg-left
                                     h4.text-white Bluey-green
                                     hr.d-none.d-lg-block.mb-0.ms-0
-                // Project Two Row
+                // Canvas Row Two
                 .row.gx-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/4.jpg', alt='...')
+                        img.img-fluid(src='assets/img/3.jpg', alt='...')
                     .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
+                        .dark-background.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
+                                .gallery-text.w-100.my-auto.text-center.text-lg-right
                                     h4.text-white Greeny-blue
                                     hr.d-none.d-lg-block.mb-0.me-0
 
 
 
         // Section - Studies
-        section#studies.projects-section.bg-dark
+        section#studies.gallery-section.dark-background
             .container.px-4.px-lg-5
                 // Featured Study
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/2.jpg', alt='...')
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/4.jpg', alt='...')
                     .col-xl-4.col-lg-5
                         .featured-text.text-center.text-lg-left
                             h4.text-white Studies
@@ -111,33 +109,31 @@ html(lang='en')
                 // Studies Row One
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/3.jpg', alt='...')
+                        img.img-fluid(src='assets/img/5.jpg', alt='...')
                     .col-lg-6
-                        .bg-black.text-center.h-100.project
+                        .light-background.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Bluey-green
-                                    hr.d-none.d-lg-block.mb-0.me-0
+                                .gallery-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-dark Bluey-green
                 // Studies Row Two
                 .row.gx-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/4.jpg', alt='...')
+                        img.img-fluid(src='assets/img/6.jpg', alt='...')
                     .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
+                        .light-background.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Greeny-blue
-                                    hr.d-none.d-lg-block.mb-0.me-0
+                                .gallery-text.w-100.my-auto.text-center.text-lg-right
+                                    h4.text-dark Greeny-blue
 
 
 
         // Section - Wood Work
-        section#wood-work.projects-section.bg-light
+        section#wood-work.gallery-section.light-background
             .container.px-4.px-lg-5
                 // Featured Woor Work
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/2.jpg', alt='...')
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/7.jpg', alt='...')
                     .col-xl-4.col-lg-5
                         .featured-text.text-center.text-lg-left
                             h4 Wood Work
@@ -146,33 +142,31 @@ html(lang='en')
                 // Wood Work Row One
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/3.jpg', alt='...')
+                        img.img-fluid(src='assets/img/1.jpg', alt='...')
                     .col-lg-6
-                        .bg-black.text-center.h-100.project
+                        .dark-background.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                .gallery-text.w-100.my-auto.text-center.text-lg-left
                                     h4.text-white Bluey-green
-                                    hr.d-none.d-lg-block.mb-0.me-0
                 // Wood Work Row Two
                 .row.gx-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/4.jpg', alt='...')
+                        img.img-fluid(src='assets/img/2.jpg', alt='...')
                     .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
+                        .dark-background.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
+                                .gallery-text.w-100.my-auto.text-center.text-lg-right
                                     h4.text-white Greeny-blue
-                                    hr.d-none.d-lg-block.mb-0.me-0
 
 
 
         // Section - Photos
-        section#photography.projects-section.bg-dark
+        section#photography.gallery-section.dark-background
             .container.px-4.px-lg-5
                 // Featured Photo
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/2.jpg', alt='...')
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/3.jpg', alt='...')
                     .col-xl-4.col-lg-5
                         .featured-text.text-center.text-lg-left
                             h4.text-white Photography
@@ -181,35 +175,33 @@ html(lang='en')
                 // Photos Row One
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/3.jpg', alt='...')
+                        img.img-fluid(src='assets/img/4.jpg', alt='...')
                     .col-lg-6
-                        .bg-black.text-center.h-100.project
+                        .light-background.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Bluey-green
-                                    p.mb-0.text-white-50
+                                .gallery-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-dark Bluey-green
+                                    p.mb-0.text-dark-50
                                         | Some text could be here
-                                    hr.d-none.d-lg-block.mb-0.ms-0
                 // Photos Row Two
                 .row.gx-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/4.jpg', alt='...')
+                        img.img-fluid(src='assets/img/5.jpg', alt='...')
                     .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
+                        .light-background.text-center.h-100.project
                             .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Greeny-blue
-                                    p.mb-0.text-white-50
+                                .gallery-text.w-100.my-auto.text-center.text-lg-right
+                                    h4.text-dark Greeny-blue
+                                    p.mb-0.text-dark-50
                                         | Some other cool text
-                                    hr.d-none.d-lg-block.mb-0.me-0
 
 
         // Contact
-        section.contact-section.bg-black
+        section.contact-section.dark-background
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
                     .col-md-6.mb-3.mb-md-0
-                        .card.py-4.h-100
+                        .card.py-4.h-100.light-background
                             .card-body.text-center
                                 i.fas.fa-map-marked-alt.text-primary.mb-2
                                 h4.text-uppercase.m-0 Address
@@ -218,7 +210,7 @@ html(lang='en')
                                     a(href='https://www.google.com/maps/place/Kilmory,+Lochgilphead+PA31+8PB/@55.9139056,-5.6814477,16z/data=!3m1!4b1!4m5!3m4!1s0x488a2f4a2b49092b:0x3acc3166112b693e!8m2!3d55.9138964!4d-5.6770778')
                                         | Kilmory, Knapdale, Argyll and Bute
                     .col-md-6.mb-3.mb-md-0
-                        .card.py-4.h-100
+                        .card.py-4.h-100.light-background
                             .card-body.text-center
                                 i.fas.fa-envelope.text-primary.mb-2
                                 h4.text-uppercase.m-0 Email
@@ -226,11 +218,11 @@ html(lang='en')
                                 .small.text-black-50
                                     a(href='mailto:jjkilmory@gmail.com') jjkilmory@gmail.com
                 .social.d-flex.justify-content-center
-                    a.mx-2(href='#!')
+                    a.mx-5(href='https://www.instagram.com/julesakasarucijackson/')
                         i.fab.fa-instagram
 
         // Footer
-        footer.footer.bg-black.small.text-center.text-white-50
+        footer.footer.small.text-center.text-white-50
             .container.px-4.px-lg-5
                 | &copy; Akasaruci Art 2022
 
@@ -240,9 +232,3 @@ html(lang='en')
         // Core theme JS
         script(src='js/scripts.js')
 
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

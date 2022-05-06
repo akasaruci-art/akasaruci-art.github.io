@@ -26,7 +26,7 @@
     .navbar-nav {
         .nav-item {
             &:hover {
-                color: fade($white, 80%);
+                color: $dark-blue;
                 outline: none;
                 background-color: transparent;
             }
@@ -48,20 +48,28 @@
 
         .navbar-brand {
             padding: 0.5rem 0;
-            color: fade-out($white, 0.5);
+            color: $black;
+
+            &:hover {
+                color: $dark-teal;
+            }
+
+            &:active {
+                color: $dark-teal;
+            }
         }
 
         .nav-link {
             transition: none;
             padding: 2rem 1.5rem;
-            color: fade-out($white, 0.5);
+            color: $black;
 
             &:hover {
-                color: fade-out($white, 0.25);
+                color: $dark-teal;
             }
 
             &:active {
-                color: $white;
+                color: $dark-teal;
             }
         }
 
@@ -70,6 +78,14 @@
 
             .navbar-brand {
                 color: $black;
+                
+                &:hover {
+                    color: $dark-teal;
+                }
+    
+                &:active {
+                    color: $dark-teal;
+                }
             }
 
             .nav-link {
@@ -78,17 +94,17 @@
                 border-bottom: 0.25rem solid transparent;
 
                 &:hover {
-                    color: $primary;
+                    color: $dark-teal;
                 }
 
                 &:active {
-                    color: darken($primary, 15%);
+                    color: $dark-teal;
                 }
 
                 &.active {
-                    color: $primary;
+                    color: $dark-teal;
                     outline: none;
-                    border-bottom: 0.25rem solid $primary;
+                    border-bottom: 0.25rem solid $dark-teal;
                 }
             }
         }

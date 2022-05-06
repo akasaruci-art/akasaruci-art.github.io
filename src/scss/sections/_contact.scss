@@ -3,7 +3,7 @@
 // 
 
 .contact-section {
-    padding-top: 5rem;
+  padding: 5rem 0;
 
     .card {
         border: 0;
@@ -28,12 +28,13 @@
 
         a {
             text-align: center;
-            height: 3rem;
-            width: 3rem;
+            height: 4rem;
+            width: 4rem;
             background: fade-out($white, 0.9);
             border-radius: 100%;
-            line-height: 3rem;
+            line-height: 4.1rem;
             color: fade-out($white, 0.7);
+            font-size: 36px;
 
             &:hover {
                 color: fade-out($white, 0.5);

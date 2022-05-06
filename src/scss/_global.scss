@@ -14,3 +14,11 @@ html {
 body {
     letter-spacing: $base-letter-spacing;
 }
+
+.dark-background {
+    background: $dark-blue;
+}
+
+.light-background {
+    background: $light-blue;
+}
