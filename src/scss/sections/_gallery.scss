@@ -13,10 +13,16 @@
         }
     }
 
+    .featured-image {
+        max-height: 80vh;
+    }
+
+    .featured-image-left {
+        float: right;
+    }
+
     .order-lg-first {
         .featured-text {
-            padding: 2rem;
-
             @include media-breakpoint-up(lg) {
                 padding: 0 2rem 0 0;
                 border-right: 0.5rem solid $primary;
@@ -25,23 +31,15 @@
         }
     }
 
-    .gallery-text {
-        padding: 3rem;
-        font-size: 90%;
-
-        @include media-breakpoint-up(lg) {
-            padding: 5rem;
-
-            hr {
-                border-color: $primary;
-                border-width: 0.25rem;
-                width: 30%;
-            }
-        }
-    }
-
-    .gallery-padding {
+    .gallery-container {
         padding: 1.5rem;
     }
 }
 
+
+
+@media (min-width: 1080px) {   
+    .gallery-container > img {
+        max-height: 50vh;
+    }
+}

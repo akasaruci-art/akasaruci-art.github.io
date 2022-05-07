@@ -5,55 +5,7 @@
 .masthead {
     position: relative;
     width: 100%;
-    //height: auto;
     min-height: 35rem;
-    padding: 15rem 0;
-    /*background: linear-gradient(to bottom,
-        #{fade-out($black, 0.7)} 0%,
-        #{fade-out($black, 0.5)} 85%,
-        #{fade-out($black, 0)} 100%),
-    url("../assets/img/bg-masthead.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover; 
-
-    h1 {
-        font-family: $font-family-special;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        letter-spacing: 0.8rem;
-        //color: $gray-300;
-    }
-
-    h2 {
-        max-width: 30rem;
-        font-size: 1rem;
-    }
-
-    @include media-breakpoint-up(md) {
-        h1 {
-            font-size: 4rem;
-            line-height: 4rem;
-        }
-    } */
-
-    @include media-breakpoint-up(lg) {
-        //height: 100vh;
-        padding: 0;
-        /*
-        h1 {
-            font-size: 6.5rem;
-            line-height: 6.5rem;
-            letter-spacing: 0.8rem;
-        }
-
-        h2 {
-            max-width: 50rem;
-            font-size: 1.25rem;
-        }
-        */
-    } 
 }
 
 //
@@ -77,18 +29,47 @@
     .carousel-control-prev, .carousel-control-next  {
         width: 3rem;
         margin: 1rem;
+        opacity: 1;
     }
 
     .carousel-control-padding {
         height: 3rem;
         width: 3rem;
         line-height: 3rem;
-        background: fade-out($dark-teal, 0.8);
+        background: fade-out($light-blue, 0.3);
         border-radius: 100%;
 
         .carousel-control {
             color: $primary;
         }
+
+        &:hover {
+            background: fade-out($dark-teal, 0.3);
+            .carousel-control {
+                color: $white;
+            }
+        }        
     }
 }
 
+@media (max-width: 1200px) {
+    .carousel { 
+        margin: 120px 40px 80px 40px;
+        width: calc(100% - 80px);
+    }
+
+    .carousel-control-prev, .carousel-control-next  {
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .carousel { 
+        margin: 120px 5px 80px 5px;
+        width: calc(100% - 10px);
+    }
+
+    .carousel-control-prev, .carousel-control-next  {
+        margin: 0 !important;
+    }
+}
