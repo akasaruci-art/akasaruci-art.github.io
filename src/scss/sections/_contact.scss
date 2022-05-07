@@ -4,6 +4,7 @@
 
 .contact-section {
   padding: 5rem 0;
+  background-color: $light-blue;
 
     .card {
         border: 0;
@@ -30,18 +31,19 @@
             text-align: center;
             height: 4rem;
             width: 4rem;
-            background: fade-out($white, 0.9);
+            background: fade-out($dark-teal, 0.9);
             border-radius: 100%;
             line-height: 4.2rem;
-            color: fade-out($white, 0.7);
+            color: fade-out($dark-teal, 0.2);
             font-size: 36px;
 
             &:hover {
-                color: fade-out($white, 0.5);
+                color: $dark-teal;
+                background: fade-out($dark-teal, 0.8);
             }
 
             &:active {
-                color: $white;
+                color: $primary;
             }
         }
     }

@@ -11658,11 +11658,12 @@ body {
   }
 }
 .gallery-section .gallery-padding {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .contact-section {
   padding: 5rem 0;
+  background-color: #E0EAF0;
 }
 .contact-section .card {
   border: 0;
@@ -11686,22 +11687,23 @@ body {
   text-align: center;
   height: 4rem;
   width: 4rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 112, 160, 0.1);
   border-radius: 100%;
   line-height: 4.2rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 112, 160, 0.8);
   font-size: 36px;
 }
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: #0070a0;
+  background: rgba(0, 112, 160, 0.2);
 }
 .contact-section .social a:active {
-  color: #fff;
+  color: #0070a0;
 }
 
 .footer {
   padding: 5rem 0;
-  background-color: #001423;
+  background-color: #002233;
 }
 
 section {
