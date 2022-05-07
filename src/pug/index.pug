@@ -2,7 +2,6 @@ doctype html
 html(lang='en')
 
     head
-
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
@@ -27,20 +26,20 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#') Akasaruci Art
+                a.navbar-brand(href='#page-top') Akasaruci Art
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='#canvas') Canvas
+                            a.nav-link(href='#canvas') Paintings on Canvas
                         li.nav-item
-                            a.nav-link(href='#studies') Studies
+                            a.nav-link(href='#paper') Paintings on Paper
                         li.nav-item
-                            a.nav-link(href='#wood-work') Wood Work
+                            a.nav-link(href='#wood-works') Wood Works
                         li.nav-item
-                            a.nav-link(href='#photography') Photography
+                            a.nav-link(href='#photo-works') Photo Works
 
         // Masthead
         header.masthead.light-background
@@ -58,67 +57,61 @@ html(lang='en')
                         p.text-white-50 Based in Kilmory, Achnamara, Knapdale, Argyll &amp; Bute, Scotland.
 
 
-
         // Section - Canvas
         section#canvas.gallery-section.light-background
             .container.px-4.px-lg-5
                 // Featured Canvas
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/1.jpg', alt='...')
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/gallery/canvas/01.jpg', alt='...')
                     .col-xl-4.col-lg-5
                         .featured-text.text-center.text-lg-left
-                            h4 Canvas
+                            h4 Paintings on Canvas
                             p.text-black-50.mb-0
                                 | &quot;My paintings are often abstract and non-representational, sometimes with anchors of sea, sky or land, to offer the viewer the opportunity to reconnect with their own emotional memories of being in nature.&quot;
                 // Canvas Row One
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/2.jpg', alt='...')
-                    .col-lg-6
-                        .dark-background.text-center.h-100.project
-                            .d-flex.h-100
-                                .gallery-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Bluey-green
-                                    hr.d-none.d-lg-block.mb-0.ms-0
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/canvas/02.jpg', alt='...')
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/canvas/03.jpg', alt='...')
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/canvas/04.jpg', alt='...')
                 // Canvas Row Two
                 .row.gx-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/3.jpg', alt='...')
-                    .col-lg-6.order-lg-first
-                        .dark-background.text-center.h-100.project
-                            .d-flex.h-100
-                                .gallery-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Greeny-blue
-                                    hr.d-none.d-lg-block.mb-0.me-0
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/canvas/05.jpg', alt='...')
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/canvas/06.jpg', alt='...')
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/canvas/07.jpg', alt='...')
 
 
-
-        // Section - Studies
-        section#studies.gallery-section.dark-background
+        // Section - Paper
+        section#paper.gallery-section.dark-background
             .container.px-4.px-lg-5
-                // Featured Study
+                // Featured Paper
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/4.jpg', alt='...')
-                    .col-xl-4.col-lg-5
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/gallery/canvas/4.jpg', alt='...')
+                    .col-xl-4.col-lg-5.order-lg-first
                         .featured-text.text-center.text-lg-left
-                            h4.text-white Studies
+                            h4.text-white Paintings on Paper
                             p.text-white-50.mb-0
                                 | &quot;I am aiming to find a visual language using colour and mark-making which conveys the particular beauty and quality of light in this corner of Argyll.&quot;
-                // Studies Row One
+                // Paper Row One
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/5.jpg', alt='...')
+                        img.img-fluid(src='assets/gallery/canvas/5.jpg', alt='...')
                     .col-lg-6
                         .light-background.text-center.h-100.project
                             .d-flex.h-100
                                 .gallery-text.w-100.my-auto.text-center.text-lg-left
                                     h4.text-dark Bluey-green
-                // Studies Row Two
+                // Paper Row Two
                 .row.gx-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/6.jpg', alt='...')
+                        img.img-fluid(src='assets/gallery/canvas/6.jpg', alt='...')
                     .col-lg-6.order-lg-first
                         .light-background.text-center.h-100.project
                             .d-flex.h-100
@@ -126,74 +119,66 @@ html(lang='en')
                                     h4.text-dark Greeny-blue
 
 
-
-        // Section - Wood Work
-        section#wood-work.gallery-section.light-background
+        // Section - Wood Works
+        section#wood-works.gallery-section.light-background
             .container.px-4.px-lg-5
                 // Featured Woor Work
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/7.jpg', alt='...')
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/gallery/wood/01.jpg', alt='...')
                     .col-xl-4.col-lg-5
                         .featured-text.text-center.text-lg-left
                             h4 Wood Work
                             p.text-black-50.mb-0
-                                | &quot;I pure love burning stuff&quot;
+                                | &quot;Burning wood is the best way to bring joy to the heart&quot;
+                                br
+                                | Ancient Greek Proverb
                 // Wood Work Row One
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/1.jpg', alt='...')
-                    .col-lg-6
-                        .dark-background.text-center.h-100.project
-                            .d-flex.h-100
-                                .gallery-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Bluey-green
+                .row.gx-0.justify-content-center
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/wood/02.jpg', alt='...')
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/wood/03.jpg', alt='...')
+                    .col-xl-4.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/wood/04.jpg', alt='...')
                 // Wood Work Row Two
                 .row.gx-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/2.jpg', alt='...')
-                    .col-lg-6.order-lg-first
-                        .dark-background.text-center.h-100.project
-                            .d-flex.h-100
-                                .gallery-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Greeny-blue
+                    .col-xl-6.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/wood/05.jpg', alt='...')
+                    .col-xl-6.col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/wood/06.jpg', alt='...')
 
 
-
-        // Section - Photos
-        section#photography.gallery-section.dark-background
+        // Section - Photo Works
+        section#photo-works.gallery-section.dark-background
             .container.px-4.px-lg-5
-                // Featured Photo
+                // Featured Photo Work
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/3.jpg', alt='...')
-                    .col-xl-4.col-lg-5
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/gallery/photo/04.jpg', alt='...')
+                    .col-xl-4.col-lg-5.order-lg-first
                         .featured-text.text-center.text-lg-left
                             h4.text-white Photography
                             p.text-white-50.mb-0
                                 | &quot;Lemme take a selfie&quot;
-                // Photos Row One
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/4.jpg', alt='...')
-                    .col-lg-6
-                        .light-background.text-center.h-100.project
-                            .d-flex.h-100
-                                .gallery-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-dark Bluey-green
-                                    p.mb-0.text-dark-50
-                                        | Some text could be here
-                // Photos Row Two
+                // Photo Work Row One
                 .row.gx-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/5.jpg', alt='...')
-                    .col-lg-6.order-lg-first
-                        .light-background.text-center.h-100.project
-                            .d-flex.h-100
-                                .gallery-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-dark Greeny-blue
-                                    p.mb-0.text-dark-50
-                                        | Some other cool text
+                    .col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/photo/01.jpg', alt='...')
+                    .col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/photo/02.jpg', alt='...')
+                // Photo Work Row Two
+                .row.gx-0.justify-content-center
+                    .col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/photo/03.jpg', alt='...')
+                    .col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/photo/05.jpg', alt='...')
+                // Photo Work Row Three
+                .row.gx-0.justify-content-center
+                    .col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/photo/06.jpg', alt='...')
+                    .col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/photo/07.jpg', alt='...')
 
 
         // Contact

@@ -51,11 +51,11 @@
             color: $black;
 
             &:hover {
-                color: $dark-teal;
+                color: $primary;
             }
 
             &:active {
-                color: $dark-teal;
+                color: $primary;
             }
         }
 
@@ -65,11 +65,11 @@
             color: $black;
 
             &:hover {
-                color: $dark-teal;
+                color: $primary;
             }
 
             &:active {
-                color: $dark-teal;
+                color: $primary;
             }
         }
 
@@ -80,11 +80,11 @@
                 color: $black;
                 
                 &:hover {
-                    color: $dark-teal;
+                    color: $primary;
                 }
     
                 &:active {
-                    color: $dark-teal;
+                    color: $primary;
                 }
             }
 
@@ -94,17 +94,17 @@
                 border-bottom: 0.25rem solid transparent;
 
                 &:hover {
-                    color: $dark-teal;
+                    color: $primary;
                 }
 
                 &:active {
-                    color: $dark-teal;
+                    color: $primary;
                 }
 
                 &.active {
-                    color: $dark-teal;
+                    color: $primary;
                     outline: none;
-                    border-bottom: 0.25rem solid $dark-teal;
+                    border-bottom: 0.25rem solid $primary;
                 }
             }
         }

@@ -13,6 +13,18 @@
         }
     }
 
+    .order-lg-first {
+        .featured-text {
+            padding: 2rem;
+
+            @include media-breakpoint-up(lg) {
+                padding: 0 2rem 0 0;
+                border-right: 0.5rem solid $primary;
+                border-left: 0;
+            }
+        }
+    }
+
     .gallery-text {
         padding: 3rem;
         font-size: 90%;
@@ -27,4 +39,9 @@
             }
         }
     }
+
+    .gallery-padding {
+        padding: 1rem;
+    }
 }
+
