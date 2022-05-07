@@ -5,7 +5,7 @@
 .masthead {
     position: relative;
     width: 100%;
-    height: auto;
+    //height: auto;
     min-height: 35rem;
     padding: 15rem 0;
     /*background: linear-gradient(to bottom,
@@ -16,7 +16,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;*/
+    background-size: cover; 
 
     h1 {
         font-family: $font-family-special;
@@ -36,12 +36,12 @@
             font-size: 4rem;
             line-height: 4rem;
         }
-    }
+    } */
 
     @include media-breakpoint-up(lg) {
-        height: 100vh;
+        //height: 100vh;
         padding: 0;
-
+        /*
         h1 {
             font-size: 6.5rem;
             line-height: 6.5rem;
@@ -52,5 +52,43 @@
             max-width: 50rem;
             font-size: 1.25rem;
         }
+        */
+    } 
+}
+
+//
+// Carousel
+//
+
+.carousel {    
+    margin: 120px 80px 80px 80px;
+    width: calc(100% - 160px);
+    height: calc(100vh - 200px);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    img {
+        width: 100%;
+        height: calc(100vh - 200px);
+        object-fit: contain;
+    }
+
+    .carousel-control-prev, .carousel-control-next  {
+        width: 3rem;
+        margin: 1rem;
+    }
+
+    .carousel-control-padding {
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+        background: fade-out($dark-teal, 0.8);
+        border-radius: 100%;
+
+        .carousel-control {
+            color: $primary;
+        }
     }
 }
+

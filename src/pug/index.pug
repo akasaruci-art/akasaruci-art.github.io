@@ -26,7 +26,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top') Akasaruci Art
+                a.navbar-brand(href='#') Akasaruci Art
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -42,10 +42,56 @@ html(lang='en')
                             a.nav-link(href='#photo-works') Photo Works
 
         // Masthead
-        header.masthead.light-background
-            .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
-                .d-flex.justify-content-center
-                    h2.mb-4 Coming soon
+        header.masthead
+            #main-carousel.carousel.slide(data-bs-interval='false')
+                .carousel-inner
+                    .carousel-item.active
+                        img.img-fluid(src='assets/gallery/canvas/01.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/wood/01.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/photo/01.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/canvas/02.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/wood/02.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/photo/02.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/canvas/03.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/wood/03.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/photo/03.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/canvas/04.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/wood/04.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/photo/04.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/canvas/05.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/wood/05.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/photo/05.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/canvas/06.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/wood/06.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/photo/06.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/canvas/07.jpg', alt='...')
+                    .carousel-item
+                        img.img-fluid(src='assets/gallery/photo/07.jpg', alt='...')
+
+                button.carousel-control-prev(type='button', data-bs-target='#main-carousel', data-bs-slide='prev')
+                    .carousel-control-padding
+                        i.carousel-control.fa.fa-chevron-left
+                button.carousel-control-next(type='button', data-bs-target='#main-carousel', data-bs-slide='next')
+                    .carousel-control-padding
+                        i.carousel-control.fa.fa-chevron-right
                     
 
         // About
@@ -53,7 +99,7 @@ html(lang='en')
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
-                        h2.text-white.mb-4 Using oil paint to capture the seascapes, skyscapes and landscapes of Knapdale. 
+                        h2.text-white.mb-4 Using oil paint, to capture the seascapes, skyscapes and landscapes of Knapdale. 
                         p.text-white-50 Based in Kilmory, Achnamara, Knapdale, Argyll &amp; Bute, Scotland.
 
 
@@ -155,7 +201,7 @@ html(lang='en')
                 // Featured Photo Work
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/gallery/photo/04.jpg', alt='...')
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/gallery/photo/01.jpg', alt='...')
                     .col-xl-4.col-lg-5.order-lg-first
                         .featured-text.text-center.text-lg-left
                             h4.text-white Photography
@@ -164,13 +210,13 @@ html(lang='en')
                 // Photo Work Row One
                 .row.gx-0.justify-content-center
                     .col-md-6.col-m-12.gallery-padding
-                        img.img-fluid(src='assets/gallery/photo/01.jpg', alt='...')
-                    .col-md-6.col-m-12.gallery-padding
                         img.img-fluid(src='assets/gallery/photo/02.jpg', alt='...')
+                    .col-md-6.col-m-12.gallery-padding
+                        img.img-fluid(src='assets/gallery/photo/03.jpg', alt='...')
                 // Photo Work Row Two
                 .row.gx-0.justify-content-center
                     .col-md-6.col-m-12.gallery-padding
-                        img.img-fluid(src='assets/gallery/photo/03.jpg', alt='...')
+                        img.img-fluid(src='assets/gallery/photo/04.jpg', alt='...')
                     .col-md-6.col-m-12.gallery-padding
                         img.img-fluid(src='assets/gallery/photo/05.jpg', alt='...')
                 // Photo Work Row Three
@@ -210,6 +256,9 @@ html(lang='en')
         footer.footer.small.text-center.text-white-50
             .container.px-4.px-lg-5
                 | &copy; Akasaruci Art 2022
+
+        // jQuery
+        script(src='https://code.jquery.com/jquery-3.6.0.min.js')
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
