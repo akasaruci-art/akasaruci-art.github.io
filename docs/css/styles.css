@@ -11694,18 +11694,18 @@ body {
   text-align: center;
   height: 4rem;
   width: 4rem;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
   border-radius: 100%;
   line-height: 4.2rem;
   color: #0070a0;
   font-size: 36px;
 }
 .contact-section .social a:hover {
-  color: #002233;
-  background: rgba(100, 161, 157, 0.9);
+  color: #fff;
+  background: #0070a0;
 }
 .contact-section .social a:active {
-  color: #0070a0;
+  color: #fff;
 }
 
 .footer {

@@ -30,19 +30,19 @@
             text-align: center;
             height: 4rem;
             width: 4rem;
-            background: fade-out($white, 0.2);
+            background: $white;
             border-radius: 100%;
             line-height: 4.2rem;
-            color: $dark-teal;
+            color: $primary;
             font-size: 36px;
 
             &:hover {
-                color: $dark-blue;
-                background: fade-out($teal, 0.1);
+                color: $white;
+                background: $primary;
             }
 
             &:active {
-                color: $primary;
+                color: $white;
             }
         }
     }
