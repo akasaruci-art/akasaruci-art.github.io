@@ -11476,8 +11476,8 @@ body {
   background: #002233;
 }
 
-.light-background {
-  background: #E0EAF0;
+.darkish-background {
+  background: #113344;
 }
 
 #mainNav {
@@ -11671,7 +11671,6 @@ body {
 }
 .contact-section {
   padding: 5rem 0;
-  background-color: #E0EAF0;
 }
 .contact-section .card {
   border: 0;
@@ -11695,15 +11694,15 @@ body {
   text-align: center;
   height: 4rem;
   width: 4rem;
-  background: rgba(0, 112, 160, 0.1);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 100%;
   line-height: 4.2rem;
-  color: rgba(0, 112, 160, 0.8);
+  color: #0070a0;
   font-size: 36px;
 }
 .contact-section .social a:hover {
-  color: #0070a0;
-  background: rgba(0, 112, 160, 0.2);
+  color: #002233;
+  background: rgba(100, 161, 157, 0.9);
 }
 .contact-section .social a:active {
   color: #0070a0;
@@ -11716,6 +11715,7 @@ body {
 
 section {
   padding: 5rem 0;
+  color: #fff;
 }
 
 .inner-section {
