@@ -48,28 +48,28 @@
 
         .navbar-brand {
             padding: 0.5rem 0;
-            color: $black;
+            color: $gray-300;
 
             &:hover {
-                color: $primary;
+                color: $teal;
             }
 
             &:active {
-                color: $primary;
+                color: $teal;
             }
         }
 
         .nav-link {
             transition: none;
             padding: 2rem 1.5rem;
-            color: $black;
+            color: $gray-300;
 
             &:hover {
-                color: $primary;
+                color: $teal;
             }
 
             &:active {
-                color: $primary;
+                color: $teal;
             }
         }
 

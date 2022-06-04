@@ -4,6 +4,10 @@
 
 .gallery-section {
 
+    .full-width-gallery-image > img{
+        max-height: 90vh;
+    }
+
     .featured-text {
         padding: 2rem;
 
@@ -40,6 +44,6 @@
 
 @media (min-width: 1080px) {   
     .gallery-container > img {
-        max-height: 50vh;
+        max-height: 47vh;
     }
 }
