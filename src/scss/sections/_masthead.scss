@@ -10,9 +10,9 @@
     min-height: 35rem;
     padding: 15rem 0;
     background: linear-gradient(to bottom,
-        #{fade-out(#002030, 1)} 0%,
-        #{fade-out(#002030, 0.8)} 60%,
-        #{fade-out(#002030, 0.4)} 80%,
+        #{fade-out(#002030, 0.2)} 0%,
+        #{fade-out(#002030, 0.9)} 30%,
+        #{fade-out(#002030, 0.8)} 65%,
         #{fade-out(#002030, 0)} 100%),
     url("../assets/gallery/bg-1.jpg");
     background-position: center;
