@@ -3,7 +3,12 @@
 // 
 
 .contact-section {
-  padding: 5rem 0;
+
+    padding: 5rem 0;
+
+    svg {
+        font-size: 32px;
+    }
 
     .card {
         border: 0;

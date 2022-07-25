@@ -11736,6 +11736,9 @@ body {
 .contact-section {
   padding: 5rem 0;
 }
+.contact-section svg {
+  font-size: 32px;
+}
 .contact-section .card {
   border: 0;
   border-bottom: 0.25rem solid #0070a0;
