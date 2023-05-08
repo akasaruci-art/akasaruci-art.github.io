@@ -26,7 +26,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#canvas">Paintings on Canvas</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -57,17 +56,19 @@
             <div class="inner-section" id="canvas">
                 <div class="container px-4 px-lg-5">
                     <!-- Featured Canvas-->
-                    <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                        <div class="col-xl-8 col-lg-7"><img class="featured-image featured-image-left img-fluid mb-3 mb-lg-0" src="assets/gallery/canvas/small/01.jpg" alt="..." /></div>
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="featured-text text-center text-lg-left">
-                                <h4>Paintings on Canvas</h4>
-                                <p class="mb-0">&quot;I use oil paint to express my experience of Knapdale. The paintings are often abstract and non-representational, sometimes with visual anchors of sea, sky or land, to offer the viewer the opportunity to reconnect with their own emotional memories of being in nature. Through the work I am aiming to find a visual language using colour and mark-making which conveys the particular elemental beauty and quality of light in this corner of Argyll.&quot;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Canvas Row-->
+                    <!--.row.gx-0.mb-4.mb-lg-5.align-items-center.col-xl-12.col-lg-12
+    img.featured-image.featured-image-left.img-fluid.mb-3.mb-lg-0(src='assets/gallery/canvas/small/01.jpg', alt='...')
+.col-xl-4.col-lg-5
+    .featured-text.text-center.text-lg-left
+        h4 Paintings on Canvas
+        p.mb-0
+            | &quot;I use oil paint to express my experience of Knapdale. The paintings are often abstract and non-representational, 
+            | sometimes with visual anchors of sea, sky or land, to offer the viewer the opportunity to reconnect with their own emotional memories of being in nature. 
+            | Through the work I am aiming to find a visual language using colour and mark-making which conveys the particular elemental beauty and quality of light in this corner of Argyll.&quot;
+-->
+                    <!-- Canvas Row                       -->
                     <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                        <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/01.jpg" alt="..." /></div>
                         <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/02.jpg" alt="..." /></div>
                         <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/03.jpg" alt="..." /></div>
                         <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/04.jpg" alt="..." /></div>
@@ -94,27 +95,17 @@
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100 bg-white">
                             <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="https://www.google.com/maps/place/Kilmory,+Lochgilphead+PA31+8PB/@55.9139056,-5.6814477,16z/data=!3m1!4b1!4m5!3m4!1s0x488a2f4a2b49092b:0x3acc3166112b693e!8m2!3d55.9138964!4d-5.6770778">Kilmory, Achnamara, Knapdale, Argyll, Scotland</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100 bg-white">
-                            <div class="card-body text-center">
                                 <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
+                                <h4 class="text-uppercase m-0 text-black-50">Email</h4>
                                 <hr class="my-4 mx-auto" />
                                 <div class="small text-black-50"><a href="mailto:jjkilmory@gmail.com">jjkilmory@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-5" href="https://www.instagram.com/julesakasarucijackson/"><i class="fab fa-instagram"></i></a>
-                </div>
+                <!--.social.d-flex.justify-content-centera.mx-5(href='https://www.instagram.com/julesakasarucijackson/')
+    i.fab.fa-instagram
+-->
             </div>
         </section>
         <!-- Footer-->
