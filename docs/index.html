@@ -10,22 +10,24 @@
         <!-- Font Awesome icons-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="homeNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#">Jules Jackson</a>
+                <a class="navbar-brand" id="top-name" href="#">Jules Jackson</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/2024.html">2024</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/2023.html">2023</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -33,63 +35,38 @@
         </nav>
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center padding-top-masthead">
+                <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Paintings by Jules Jackson</h1>
-                        <h2 class="text-white-50 mx-auto mt-3 mb-6">The sea, the sky and the land inbetween</h2>
+                        <h1 class="mx-auto my-0 text-uppercase">Jules Jackson</h1>
+                        <h2 class="mx-auto mt-3 mb-6">The Sky, the Sea, and the Land in between</h2>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- Section - Year Cards-->
+        <section class="gallery-section">
+            <div id="canvas">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-0 mb-5 mb-lg-0">
+                        <div class="col-md-6 col-12 gallery-container">
+                            <a class="year-card-container" href="/2024.html">
+                                <img class="year-card-image img-fluid" src="assets/gallery/2024/01.jpg" alt="..." />
+                                <div class="year-card-text">2024</div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-12 gallery-container">
+                            <a class="year-card-container" href="/2023.html">
+                                <img class="year-card-image img-fluid" src="assets/gallery/2023/01.jpg" alt="..." />
+                                <div class="year-card-text">2023</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- About-->
-        <section class="about-section text-center bluey-background" id="about">
-            <div class="inner-section">
-                <div class="container px-4 px-lg-5">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-lg-9"><h3 class="mb-4">A selection of paintings inspired by the seascapes, skyscapes and landscape of Knapdale, Argyll, Scotland</h3></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Section - Canvas-->
-        <section class="gallery-section dark-background">
-            <div class="inner-section" id="canvas">
-                <div class="container px-4 px-lg-5">
-                    <!-- Featured Canvas-->
-                    <!--.row.gx-0.mb-4.mb-lg-5.align-items-center.col-xl-12.col-lg-12
-    img.featured-image.featured-image-left.img-fluid.mb-3.mb-lg-0(src='assets/gallery/canvas/small/01.jpg', alt='...')
-.col-xl-4.col-lg-5
-    .featured-text.text-center.text-lg-left
-        h4 Paintings on Canvas
-        p.mb-0
-            | &quot;I use oil paint to express my experience of Knapdale. The paintings are often abstract and non-representational, 
-            | sometimes with visual anchors of sea, sky or land, to offer the viewer the opportunity to reconnect with their own emotional memories of being in nature. 
-            | Through the work I am aiming to find a visual language using colour and mark-making which conveys the particular elemental beauty and quality of light in this corner of Argyll.&quot;
--->
-                    <!-- Canvas Row                       -->
-                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                        <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/01.jpg" alt="..." /></div>
-                        <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/02.jpg" alt="..." /></div>
-                        <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/03.jpg" alt="..." /></div>
-                        <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/04.jpg" alt="..." /></div>
-                        <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/05.jpg" alt="..." /></div>
-                        <div class="col-xl-4 col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/06.jpg" alt="..." /></div>
-                    </div>
-                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                        <div class="col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/07.jpg" alt="..." /></div>
-                        <div class="col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/08.jpg" alt="..." /></div>
-                        <div class="col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/09.jpg" alt="..." /></div>
-                        <div class="col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/10.jpg" alt="..." /></div>
-                        <div class="col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/11.jpg" alt="..." /></div>
-                        <div class="col-md-6 col-12 gallery-container"><img class="img-fluid" src="assets/gallery/canvas/small/12.jpg" alt="..." /></div>
-                        <div class="col-12 gallery-container full-width-gallery-image"><img class="img-fluid" src="assets/gallery/canvas/large/13.jpg" alt="..." /></div>
-                        <div class="col-12 gallery-container full-width-gallery-image"><img class="img-fluid" src="assets/gallery/canvas/large/14.jpg" alt="..." /></div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Contact-->
-        <section class="contact-section dark-background" id="contact">
+        <section class="contact-section baby-blue-background" id="contact">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-4 mb-3 mb-md-0">
@@ -98,7 +75,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0 text-black-50">Email</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="mailto:jjkilmory@gmail.com">jjkilmory@gmail.com</a></div>
+                                <p class="text-black-50"><a href="mailto:jjkilmory@gmail.com">jjkilmory@gmail.com</a></p>
                             </div>
                         </div>
                     </div>

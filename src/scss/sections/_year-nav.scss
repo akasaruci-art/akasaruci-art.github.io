@@ -1,0 +1,24 @@
+// 
+// Year Nav
+// 
+
+.year-card-container {
+    position: relative;
+    text-align: center;
+    display: block;
+
+    &:hover {
+        .year-card-image {
+            filter: brightness(70%);
+        }
+    }
+}
+
+.year-card-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: $gray-400;
+}

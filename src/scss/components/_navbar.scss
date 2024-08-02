@@ -2,7 +2,7 @@
 // Navbar
 // 
 
-#mainNav {
+#mainNav, #homeNav {
     min-height: 3.5rem;
     background-color: $white;
 
@@ -19,14 +19,15 @@
 
     .navbar-brand {
         color: $black;
-        font-weight: 700;
+        font-weight: 600;
         padding: 0.9rem 0;
     }
 
     .navbar-nav {
         .nav-item {
+            width: 7rem;
             &:hover {
-                color: $dark-blue;
+                color: $primary;
                 outline: none;
                 background-color: transparent;
             }
@@ -39,6 +40,10 @@
         }
     }
 
+    #top-name {
+        display: none;
+    }
+
     @include media-breakpoint-up(lg) {
         padding-top: 0;
         padding-bottom: 0;
@@ -47,31 +52,36 @@
         transition: background-color 0.3s ease-in-out;
 
         .navbar-brand {
+            font-size: 1.5rem;
             padding: 0.5rem 0;
             color: $gray-300;
 
             &:hover {
-                color: $teal;
+                color: $black;
             }
 
             &:active {
-                color: $teal;
+                color: $black;
             }
         }
 
         .nav-link {
+            font-size: 1.5rem;
             transition: none;
             padding: 2rem 1.5rem;
             color: $gray-300;
 
             &:hover {
-                color: $teal;
+                color: $white;
+                font-weight: 600;
             }
 
             &:active {
-                color: $teal;
+                color: $white;
+                font-weight: 600;
             }
         }
+
 
         &.navbar-shrink {
             background-color: $white;
@@ -95,17 +105,21 @@
 
                 &:hover {
                     color: $primary;
+                    font-weight: 500;
                 }
 
                 &:active {
                     color: $primary;
+                    font-weight: 500;
                 }
 
                 &.active {
                     color: $primary;
                     outline: none;
-                    border-bottom: 0.25rem solid $primary;
                 }
+            }
+            #top-name {
+                display: block;
             }
         }
     }
