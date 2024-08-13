@@ -11634,13 +11634,32 @@ body {
 }
 
 .about-section {
-  background-color: #f0f0f0;
+  padding-top: 10rem;
 }
 .about-section h2, .about-section .h2 {
   font-size: 2.3rem;
 }
 .about-section p {
   font-size: 1.3rem;
+}
+
+.grey-background {
+  background-color: #f0f0f0;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.about-container {
+  padding: 1.5rem;
+}
+
+.align-vertically {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .gallery-section .full-width-gallery-image > img {

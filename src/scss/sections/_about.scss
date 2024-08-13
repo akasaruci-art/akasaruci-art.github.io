@@ -3,11 +3,30 @@
 // 
 
 .about-section {
-  background-color: #f0f0f0;
+  padding-top: 10rem;
   h2 {
     font-size: 2.3rem;
   }
   p {
     font-size: 1.3rem;
   }
+}
+
+.grey-background {
+  background-color: #f0f0f0;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.about-container {
+  padding: 1.5rem;
+}
+
+.align-vertically {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
