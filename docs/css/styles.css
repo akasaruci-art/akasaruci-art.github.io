@@ -11634,7 +11634,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 .about-section h2, .about-section .h2 {
   font-size: 2.3rem;
@@ -11652,7 +11652,11 @@ body {
 }
 
 .about-container {
-  padding: 1.5rem;
+  padding: 0rem;
+}
+
+.extra-about-padding {
+  padding-top: 10rem;
 }
 
 .align-vertically {
