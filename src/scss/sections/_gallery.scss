@@ -23,4 +23,18 @@
         text-align: center;
         margin-bottom: 0rem;
     }
+
+    .sold-container {
+        position: relative;
+        margin-top: 1rem;
+    }
+
+    .sold {
+        height: 20px;
+        width: 20px;
+        background-color: #e00;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+    }
 }
