@@ -2,12 +2,12 @@
 // About
 // 
 
-.about-section {
+.about-section, .contact-section {
   padding-top: 5rem;
   h2 {
     font-size: 2.3rem;
   }
-  p {
+  p, a {
     font-size: 1.3rem;
   }
 }
@@ -21,11 +21,11 @@
 }
 
 .about-container {
-  padding: 0rem;
+  padding: 1.5rem;
 }
 
 .extra-about-padding {
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 .align-vertically {
@@ -33,4 +33,65 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
+}
+
+.about-link {
+  text-decoration: none;
+}
+
+// 
+// Contact
+// 
+
+.contact-section {
+  background-color: #f0f0f0;
+
+  .card {
+      border: 1rem;
+      border-bottom: 0.25rem solid $blue;
+
+      h4 {
+          font-size: 1.3rem;
+          font-family: $font-family-special;
+          text-transform: uppercase;
+          letter-spacing: 0.15rem;
+      }
+
+      hr {
+          border-color: $blue;
+          border-width: 0.25rem;
+          width: 3rem;
+      }
+      p {
+          font-size: 1.1rem; 
+      }
+  }
+
+  .social {
+      margin-top: 3rem;
+      
+      svg {
+        font-size: 40px;
+      }
+
+      a {
+          text-align: center;
+          height: 4rem;
+          width: 4rem;
+          background: $white;
+          border-radius: 100%;
+          line-height: 4.2rem;
+          color: $blue;
+          font-size: 36px;
+
+          &:hover {
+              color: $white;
+              background: $blue;
+          }
+
+          &:active {
+              color: $white;
+          }
+      }
+  }
 }
