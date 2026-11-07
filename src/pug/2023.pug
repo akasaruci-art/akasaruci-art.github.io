@@ -1,105 +1,28 @@
 extends layouts/main.pug
-block content
 
-    // Section - Canvas
+block content
     section.gallery-section
         #canvas
             .container.px-4.px-lg-5
 
-                // Canvas Row                       
+                // Three-column gallery
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/01.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Maroon Eventide
-                                    p.image-description 20cm x 20cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/02.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title The Paps at Dusk
-                                    p.image-description 20cm x 20cm
-                                .col-1
-                                    .sold-container
-                                        .sold(title="Sold!")
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/03.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Dark Sound
-                                    p.image-description 20cm x 20cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/04.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Jade Hill
-                                    p.image-description 20cm x 20cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/05.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Dark Red Night
-                                    p.image-description 20cm x 20cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/06.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Purple Headed Mountain
-                                    p.image-description 20cm x 20cm
+                    +gallery-item('assets/gallery/2023/01.jpg', 'Maroon Eventide', '20cm x 20cm', 3)
+                    +gallery-item('assets/gallery/2023/02.jpg', 'The Paps at Dusk', '20cm x 20cm', 3, true)
+                    +gallery-item('assets/gallery/2023/03.jpg', 'Dark Sound', '20cm x 20cm', 3)
+                    +gallery-item('assets/gallery/2023/04.jpg', 'Jade Hill', '20cm x 20cm', 3)
+                    +gallery-item('assets/gallery/2023/05.jpg', 'Dark Red Night', '20cm x 20cm', 3)
+                    +gallery-item('assets/gallery/2023/06.jpg', 'Purple Headed Mountain', '20cm x 20cm', 3)
+
+                // Two-column gallery
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/07.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Inky Blue Light
-                                    p.image-description 36cm x 46cm
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/08.jpg', alt='...') 
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Light Disappearing Over the Horizon
-                                    p.image-description 36cm x 46cm
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/09.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Outline of the Climb
-                                    p.image-description 36cm x 46cm
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/10.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Dark Moorland
-                                    p.image-description 36cm x 46cm
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/11.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title The Distance
-                                    p.image-description 36cm x 46cm
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2023/12.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Turquoise Dusk
-                                    p.image-description 36cm x 46cm
-                    .col-12.gallery-container.full-width-gallery-image
-                        img.img-fluid(src='assets/gallery/2023/13.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Slumbering Sky
-                                    p.image-description 50cm x 100cm
+                    +gallery-item('assets/gallery/2023/07.jpg', 'Inky Blue Light', '36cm x 46cm', 2)
+                    +gallery-item('assets/gallery/2023/08.jpg', 'Light Disappearing Over the Horizon', '36cm x 46cm', 2)
+                    +gallery-item('assets/gallery/2023/09.jpg', 'Outline of the Climb', '36cm x 46cm', 2)
+                    +gallery-item('assets/gallery/2023/10.jpg', 'Dark Moorland', '36cm x 46cm', 2)
+                    +gallery-item('assets/gallery/2023/11.jpg', 'The Distance', '36cm x 46cm', 2)
+                    +gallery-item('assets/gallery/2023/12.jpg', 'Turquoise Dusk', '36cm x 46cm', 2)
+
+                // Full-width gallery
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    +gallery-item('assets/gallery/2023/13.jpg', 'Slumbering Sky', '50cm x 100cm', 1)

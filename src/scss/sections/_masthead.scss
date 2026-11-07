@@ -2,13 +2,11 @@
 // Masthead
 // 
 
-@use "../bootstrap-dependencies" as bootstrap;
-@use "../variables" as *;
-
 .masthead {
     position: relative;
     width: 100%;
     height: auto;
+    //height: auto;
     min-height: 35rem;
     padding: 15rem 0;
     background: url("../assets/bg.jpg");
@@ -21,38 +19,39 @@
         font-family: $font-family-special;
         font-size: 3rem;
         letter-spacing: 1.2rem;
-        color: bootstrap.$gray-100;
+        color: $gray-100;
     }
 
     h2 {
         font-family: $font-family-special;
         max-width: 30rem;
         font-size: 1.6rem;
-        color: bootstrap.$gray-300;
+        color: $gray-300;
     }
 
-    @media (min-width: 768px) {
+    @include media-breakpoint-up(md) {
         h1 {
             font-size: 4rem;
         }
-
+        
         h2 {
             max-width: 50rem;
             font-size: 2.1rem;
         }
     }
+    
 
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg) {
         height: 100vh;
         padding: 0;
 
         h1 {
             font-size: 7rem;
         }
-
         h2 {
             max-width: 60rem;
             font-size: 4rem;
         }
-    }
+        
+    } 
 }

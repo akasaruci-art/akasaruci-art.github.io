@@ -24,7 +24,8 @@ module.exports = async function renderSCSS() {
         loadPaths: [
             upath.resolve(__dirname, '../node_modules')
         ],
-        quietDeps: true
+        quietDeps: true,
+        silenceDeprecations: ['import']
     });
 
     const copyright = `/*!

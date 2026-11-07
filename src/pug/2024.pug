@@ -1,161 +1,36 @@
 extends layouts/main.pug
-block content
 
+block content
     // Section - Canvas
     section.gallery-section
         #canvas
             .container.px-4.px-lg-5
 
-                // Canvas Row                       
+                // Two-column gallery
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/01.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Imbued with Love
-                                    p.image-description 80cm x 80cm
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/02.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Step into the Light
-                                    p.image-description 80cm x 80cm
-                                .col-1
-                                    .sold-container
-                                        .sold(title="Sold!")
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/03.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title High in the Sky
-                                    p.image-description 80cm x 80cm
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/06.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Colbalt Violet Glow
-                                    p.image-description 80cm x 80cm
-                    .col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/07.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title The Colours that Murmur in the Sky
-                                    p.image-description 80cm x 80cm
+                    +gallery-item('assets/gallery/2024/01.jpg', 'Imbued with Love', '80cm x 80cm', 2)
+                    +gallery-item('assets/gallery/2024/02.jpg', 'Step into the Light', '80cm x 80cm', 2, true)
+                    +gallery-item('assets/gallery/2024/03.jpg', 'High in the Sky', '80cm x 80cm', 2)
+                    +gallery-item('assets/gallery/2024/06.jpg', 'Colbalt Violet Glow', '80cm x 80cm', 2)
+                    +gallery-item('assets/gallery/2024/07.jpg', 'The Colours that Murmur in the Sky', '80cm x 80cm', 2)
+
+                // Full-width gallery
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-12.gallery-container.full-width-gallery-image
-                        img.img-fluid(src='assets/gallery/2024/08.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title The Clouds are the Catchers of Dreams
-                                    p.image-description 50cm x 100cm
-                                .col-1
-                                    .sold-container
-                                        .sold(title="Sold!")
-                    .col-12.gallery-container.full-width-gallery-image
-                        img.img-fluid(src='assets/gallery/2024/09.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Blood Red Hope for Tomorrow
-                                    p.image-description 50cm x 100cm
-                    .col-12.gallery-container.full-width-gallery-image
-                        img.img-fluid(src='assets/gallery/2024/10.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title The Heavy Weight of Beauty
-                                    p.image-description 50cm x 100cm
-                    .col-12.gallery-container.full-width-gallery-image
-                        img.img-fluid(src='assets/gallery/2024/11.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Kilmory Bay Resting
-                                    p.image-description 50cm x 100cm
-                    .col-12.gallery-container.full-width-gallery-image
-                        img.img-fluid(src='assets/gallery/2024/12.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Gentle Violet Clouds
-                                    p.image-description 50cm x 100cm
-                    .col-12.gallery-container.full-width-gallery-image
-                        img.img-fluid(src='assets/gallery/2024/13.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Light Breaks Through
-                                    p.image-description 50cm x 100cm
-                    .col-12.gallery-container.full-width-gallery-image
-                        img.img-fluid(src='assets/gallery/2024/14.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title The Breeze bring with it the Lightest Touch
-                                    p.image-description 50cm x 100cm
+                    +gallery-item('assets/gallery/2024/08.jpg', 'The Clouds are the Catchers of Dreams', '50cm x 100cm', 1, true)
+                    +gallery-item('assets/gallery/2024/09.jpg', 'Blood Red Hope for Tomorrow', '50cm x 100cm', 1)
+                    +gallery-item('assets/gallery/2024/10.jpg', 'The Heavy Weight of Beauty', '50cm x 100cm', 1)
+                    +gallery-item('assets/gallery/2024/11.jpg', 'Kilmory Bay Resting', '50cm x 100cm', 1)
+                    +gallery-item('assets/gallery/2024/12.jpg', 'Gentle Violet Clouds', '50cm x 100cm', 1)
+                    +gallery-item('assets/gallery/2024/13.jpg', 'Light Breaks Through', '50cm x 100cm', 1)
+                    +gallery-item('assets/gallery/2024/14.jpg', 'The Breeze bring with it the Lightest Touch', '50cm x 100cm', 1)
+
+                // Three-column gallery
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/15.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Brilliant Rose Cloud
-                                    p.image-description 40cm x 40cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/16.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Last Light of the Day
-                                    p.image-description 40cm x 40cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/17.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Raspberry Ripple Dusk
-                                    p.image-description 40cm x 40cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/18.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Magenta Light Flows
-                                    p.image-description 40cm x 40cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/19.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Rose on Teal
-                                    p.image-description 40cm x 40cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/20.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Eventide Over the Sound
-                                    p.image-description 40cm x 40cm
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/21.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Sunset over Jura
-                                    p.image-description 40cm x 40cm
-                                .col-1
-                                    .sold-container
-                                        .sold(title="Sold!")
-                    .col-xl-4.col-md-6.col-12.gallery-container
-                        img.img-fluid(src='assets/gallery/2024/22.jpg', alt='...')
-                        .container
-                            .row    
-                                .col-10.offset-1
-                                    p.image-title Warmth on the Horizon
-                                    p.image-description 40cm x 40cm
+                    +gallery-item('assets/gallery/2024/15.jpg', 'Brilliant Rose Cloud', '40cm x 40cm', 3)
+                    +gallery-item('assets/gallery/2024/16.jpg', 'Last Light of the Day', '40cm x 40cm', 3)
+                    +gallery-item('assets/gallery/2024/17.jpg', 'Raspberry Ripple Dusk', '40cm x 40cm', 3)
+                    +gallery-item('assets/gallery/2024/18.jpg', 'Magenta Light Flows', '40cm x 40cm', 3)
+                    +gallery-item('assets/gallery/2024/19.jpg', 'Rose on Teal', '40cm x 40cm', 3)
+                    +gallery-item('assets/gallery/2024/20.jpg', 'Eventide Over the Sound', '40cm x 40cm', 3)
+                    +gallery-item('assets/gallery/2024/21.jpg', 'Sunset over Jura', '40cm x 40cm', 3, true)
+                    +gallery-item('assets/gallery/2024/22.jpg', 'Warmth on the Horizon', '40cm x 40cm', 3)
