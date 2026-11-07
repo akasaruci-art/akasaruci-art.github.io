@@ -2,4 +2,7 @@
 
 const renderSCSS = require('./render-scss');
 
-renderSCSS();
+renderSCSS().catch(error => {
+    console.error('### ERROR: SCSS build failed:', error);
+    process.exit(1);
+});

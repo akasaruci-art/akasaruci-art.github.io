@@ -1,3 +1,5 @@
+@use "sass:map";
+
 //
 // Colors
 // 
@@ -57,7 +59,7 @@ $expanded-colors: ('black': $black,
 );
 
 // Merge the maps
-$theme-colors: map-merge($theme-colors, $expanded-colors);
+$theme-colors: map.merge($theme-colors, $expanded-colors);
 
 // Override Bootstrap contrast ratio
 

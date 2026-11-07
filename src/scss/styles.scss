@@ -1,24 +1,23 @@
-// 
+//
 // Styles
-// 
+//
 
-// Import variables
-@import "./variables.scss";
+@use "sass:meta";
 
-// Import Bootstrap
-@import "bootstrap/scss/bootstrap.scss";
+// 1. Bootstrap framework
+@include meta.load-css("bootstrap/scss/bootstrap");
 
-// Global CSS
-@import "./global.scss";
+// 2. Global styles
+@include meta.load-css("./global");
 
-// Components
-@import "./components/navbar.scss";
-@import "./components/buttons.scss";
+// 3. Components
+@include meta.load-css("./components/navbar");
+@include meta.load-css("./components/buttons");
 
-// Sections
-@import "./sections/masthead.scss";
-@import "./sections/about.scss";
-@import "./sections/gallery.scss";
-@import "./sections/footer.scss";
-@import "./sections/section.scss";
-@import "./sections/year-nav.scss";
+// 4. Sections
+@include meta.load-css("./sections/masthead");
+@include meta.load-css("./sections/about");
+@include meta.load-css("./sections/gallery");
+@include meta.load-css("./sections/footer");
+@include meta.load-css("./sections/section");
+@include meta.load-css("./sections/year-nav");

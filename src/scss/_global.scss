@@ -1,11 +1,8 @@
-// 
-// Global theme styling
-// 
+@use "./variables" as *;
 
-// Scroll padding for all scroll targets on page used with
-// native CSS smooth scrolling
-// 
-// https://caniuse.com/?search=scroll-padding
+//
+// Global theme styling
+//
 
 html {
     scroll-padding-top: calc(4.5rem - 1px);

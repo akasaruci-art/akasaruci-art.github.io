@@ -1,9 +1,25 @@
+'use strict';
+
 const sh = require('shelljs');
 const upath = require('upath');
 
 const destPath = upath.resolve(upath.dirname(__filename), '../docs');
 
-sh.rm('-rf', `${destPath}/index.html`)
-sh.rm('-rf', `${destPath}/assets`)
-sh.rm('-rf', `${destPath}/css`)
-sh.rm('-rf', `${destPath}/js`)
+const pathsToClean = [
+    'index.html',
+    'assets',
+    'css',
+    'js'
+];
+
+for (const path of pathsToClean) {
+    const target = upath.resolve(destPath, path);
+
+    if (sh.test('-e', target)) {
+        const result = sh.rm('-rf', target);
+
+        if (result.code !== 0) {
+            throw new Error(`Failed to remove: ${target}`);
+        }
+    }
+}

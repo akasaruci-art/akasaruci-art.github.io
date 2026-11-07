@@ -1,3 +1,5 @@
+include mixins/navbar.pug
+
 doctype html
 html(lang='en')
 
@@ -23,27 +25,7 @@ html(lang='en')
 
     body#page-top
 
-        // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.navbar-shrink
-            .container.px-4.px-lg-5
-                a.navbar-brand(href='/') Jules Jackson
-                button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
-                    i.fas.fa-bars
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ms-auto
-                        li.nav-item 
-                            a.nav-link(href='/2025.html') 2025
-                        li.nav-item 
-                            a.nav-link(href='/2024.html') 2024
-                        li.nav-item 
-                            a.nav-link(href='/2023.html') 2023
-                        li.nav-item 
-                            a.nav-link(href='/about.html') About
-                        li.nav-item 
-                            a.nav-link(href='/gwac.html') GWAC
-                        li.nav-item
-                            a.nav-link(href='/contact.html') Contact
+        +navbar()
 
         // Section - Canvas
         section.gallery-section
@@ -205,9 +187,7 @@ html(lang='en')
                                         p.image-description 40cm x 40cm
 
         // Footer
-        footer.footer.small.text-center
-            .container.px-4.px-lg-5.text-white
-                | &copy; Jules Jackson <script>var CurrentYear = new Date().getFullYear();document.write(CurrentYear);</script>
+        include includes/footer.pug
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')

@@ -1,26 +1,34 @@
+
 'use strict';
+
 const fs = require('fs');
-const packageJSON = require('../package.json');
 const upath = require('upath');
 const sh = require('shelljs');
 
 module.exports = function renderScripts() {
 
-    const sourcePath = upath.resolve(upath.dirname(__filename), '../src/js');
-    const destPath = upath.resolve(upath.dirname(__filename), '../docs/.');
-    
-    sh.cp('-R', sourcePath, destPath)
+    const scriptsPath = upath.resolve(__dirname, '../src/js');
+    const destScriptsPath = upath.resolve(__dirname, '../docs/js');
 
-    const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/scripts.js');
-    const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../docs/js/scripts.js');
-    
-    const copyright = `/*!
-* Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
-* Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
-* Licensed under ${packageJSON.license} (https://github.com/StartBootstrap/${packageJSON.name}/blob/master/LICENSE)
-*/
-`
-    const scriptsJS = fs.readFileSync(sourcePathScriptsJS);
-    
-    fs.writeFileSync(destPathScriptsJS, copyright + scriptsJS);
+    // Create destination directory
+    fs.mkdirSync(destScriptsPath, { recursive: true });
+
+    // Copy theme scripts
+    sh.cp('-R', `${scriptsPath}/*`, destScriptsPath);
+
+    // Copy Bootstrap bundle
+    const bootstrapSource = upath.resolve(
+        __dirname,
+        '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+    );
+
+    const bootstrapDestination = upath.resolve(
+        destScriptsPath,
+        'bootstrap.bundle.min.js'
+    );
+
+    fs.copyFileSync(bootstrapSource, bootstrapDestination);
+
+    console.log('### INFO: Theme scripts copied to:', destScriptsPath);
+    console.log('### INFO: Bootstrap copied:', fs.existsSync(bootstrapDestination));
 };

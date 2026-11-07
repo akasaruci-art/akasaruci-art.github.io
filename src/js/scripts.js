@@ -1,49 +1,64 @@
 
+'use strict';
+
 // Scripts
 
-
-window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('DOMContentLoaded', () => {
 
     // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#homeNav');
+    const navbarShrink = () => {
+        const navbarCollapsible = document.querySelector('#homeNav');
+
         if (!navbarCollapsible) {
             return;
         }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
 
+        navbarCollapsible.classList.toggle(
+            'navbar-shrink',
+            window.scrollY > 0
+        );
     };
 
-    // Shrink the navbar 
+    // Shrink navbar on page load and when scrolling
     navbarShrink();
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
+    window.addEventListener('scroll', navbarShrink, { passive: true });
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 74,
-        });
-    };
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
+    // Highlight the current page in the navbar
+    const currentPage = window.location.pathname.replace(/\/$/, '') || '/';
+
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        const linkPage = new URL(link.href).pathname.replace(/\/$/, '') || '/';
+
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
     });
+
+
+    // Collapse responsive navbar when a navigation link is clicked
+    const navbarToggler = document.querySelector('.navbar-toggler');
+
+    if (navbarToggler) {
+        const responsiveNavItems = document.querySelectorAll(
+            '#navbarResponsive .nav-link'
+        );
+
+        responsiveNavItems.forEach(navItem => {
+            navItem.addEventListener('click', () => {
+                const isExpanded =
+                    navbarToggler.getAttribute('aria-expanded') === 'true';
+
+                const isVisible =
+                    window.getComputedStyle(navbarToggler).display !== 'none';
+
+                if (isVisible && isExpanded) {
+                    navbarToggler.click();
+                }
+            });
+        });
+    }
 
 });

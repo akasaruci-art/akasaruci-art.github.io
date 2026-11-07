@@ -2,6 +2,8 @@
 // About
 // 
 
+@use "../variables" as *;
+
 .about-section, .contact-section {
   padding-top: 5rem;
   h2 {
