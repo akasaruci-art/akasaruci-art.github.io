@@ -1,161 +1,125 @@
-include mixins/navbar.pug
+extends layouts/main.pug
+block content
 
-doctype html
-html(lang='en')
+    // Section - Canvas
+    section.gallery-section
+        #canvas
+            .container.px-4.px-lg-5
 
-    head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+                // Canvas Row                       
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/01.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Radient Field of Love
+                                    p.image-description 80cm x 80cm
+                                .col-1
+                                    .sold-container
+                                        .sold(title="Sold!")
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/02.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Melting my Heart
+                                    p.image-description 80cm x 80cm
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/03.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Radiating Warmth
+                                    p.image-description 50cm x 50cm
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/13.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Distant Shores
+                                    p.image-description 30cm x 30cm
+                                .col-1
+                                    .sold-container
+                                        .sold(title="Sold!")
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/06.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Calming Mauves
+                                    p.image-description 40cm x 40cm
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/05.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Brilliant Rose Dusk
+                                    p.image-description 40cm x 40cm
+                    .col-12.gallery-container.full-width-gallery-image
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    .col-12.gallery-container.full-width-gallery-image
+                        img.img-fluid(src='assets/gallery/2025/08.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title The Calm of the Evening
+                                    p.image-description 50cm x 100cm
+                    .col-12.gallery-container.full-width-gallery-image
+                        img.img-fluid(src='assets/gallery/2025/09.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Gentle Tide
+                                    p.image-description 50cm x 100cm
+                    .col-12.gallery-container.full-width-gallery-image
+                        img.img-fluid(src='assets/gallery/2025/10.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Sky Expansion
+                                    p.image-description 50cm x 100cm
 
-        title Jules Jackson
-
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
-        // Font Awesome icons
-        script(src='https://use.fontawesome.com/releases/v5.15.4/js/all.js', crossorigin='anonymous')
-
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
-
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
-
-    body#page-top
-
-        +navbar()
-
-        // Section - Canvas
-        section.gallery-section
-            #canvas
-                .container.px-4.px-lg-5
-
-                    // Canvas Row                       
-                    .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/01.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Radient Field of Love
-                                        p.image-description 80cm x 80cm
-                                    .col-1
-                                        .sold-container
-                                            .sold(title="Sold!")
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/02.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Melting my Heart
-                                        p.image-description 80cm x 80cm
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/03.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Radiating Warmth
-                                        p.image-description 50cm x 50cm
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/13.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Distant Shores
-                                        p.image-description 30cm x 30cm
-                                    .col-1
-                                        .sold-container
-                                            .sold(title="Sold!")
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/06.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Calming Mauves
-                                        p.image-description 40cm x 40cm
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/05.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Brilliant Rose Dusk
-                                        p.image-description 40cm x 40cm
-                        .col-12.gallery-container.full-width-gallery-image
-                    .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                        .col-12.gallery-container.full-width-gallery-image
-                            img.img-fluid(src='assets/gallery/2025/08.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title The Calm of the Evening
-                                        p.image-description 50cm x 100cm
-                        .col-12.gallery-container.full-width-gallery-image
-                            img.img-fluid(src='assets/gallery/2025/09.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Gentle Tide
-                                        p.image-description 50cm x 100cm
-                        .col-12.gallery-container.full-width-gallery-image
-                            img.img-fluid(src='assets/gallery/2025/10.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Sky Expansion
-                                        p.image-description 50cm x 100cm
-
-                    .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/12.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Burning Eventide
-                                        p.image-description 30cm x 30cm
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/04.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title The Power of Love
-                                        p.image-description 80cm x 80cm
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/14.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Old Madder Isles
-                                        p.image-description 30cm x 30cm
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/15.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Firey Light over The Sound
-                                        p.image-description 30cm x 30cm
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/07.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title Uplifting Evening Clouds
-                                        p.image-description 60cm x 80cm
-                        .col-md-6.col-12.gallery-container
-                            img.img-fluid(src='assets/gallery/2025/11.jpg', alt='...')
-                            .container
-                                .row    
-                                    .col-10.offset-1
-                                        p.image-title The Horizon is Alight
-                                        p.image-description 70cm x 90cm
-
-        // Footer
-        include includes/footer.pug
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
-
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/12.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Burning Eventide
+                                    p.image-description 30cm x 30cm
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/04.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title The Power of Love
+                                    p.image-description 80cm x 80cm
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/14.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Old Madder Isles
+                                    p.image-description 30cm x 30cm
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/15.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Firey Light over The Sound
+                                    p.image-description 30cm x 30cm
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/07.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title Uplifting Evening Clouds
+                                    p.image-description 60cm x 80cm
+                    .col-md-6.col-12.gallery-container
+                        img.img-fluid(src='assets/gallery/2025/11.jpg', alt='...')
+                        .container
+                            .row    
+                                .col-10.offset-1
+                                    p.image-title The Horizon is Alight
+                                    p.image-description 70cm x 90cm

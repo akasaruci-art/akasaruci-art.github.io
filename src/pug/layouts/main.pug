@@ -1,0 +1,16 @@
+include ../mixins/navbar.pug
+
+doctype html
+html(lang='en')
+    include ../includes/header.pug
+
+    body#page-top
+
+        block navbar
+            +navbar()
+
+        // Page-specific content
+        block content
+
+        // Footer
+        include ../includes/footer.pug
