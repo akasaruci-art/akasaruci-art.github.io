@@ -7,7 +7,7 @@ mixin gallery-item(src, title, description, columns=3)
         };
         const columnClass = columnClasses[columns] || columnClasses[3];
 
-    div(class=`gallery-container  ${columnClass}`)
+    div(class=`${columnClass} gallery-container`)
         img.img-fluid(src=src, alt=title)
         .container
             .row

@@ -1,18 +1,49 @@
+
 extends includes/main.pug
 
 block content
-    // Section - Canvas
     section.gallery-section
         #canvas
-            .container.px-4.px-lg-5.gallery-padding
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    +gallery-item('assets/gallery/2024/01.jpg', 'Step into the Light', '80cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2024/02.jpg', 'The Colours that Murmur in the Sky', '80cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2024/03.jpg', 'The Clouds are the Catchers of Dreams', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2024/04.jpg', 'Blood Red Hope for Tomorrow', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2024/05.jpg', 'The Heavy Weight of Beauty', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2024/06.jpg', 'Brilliant Rose Cloud', '40cm x 40cm', 2)
-                    +gallery-item('assets/gallery/2024/07.jpg', 'Last Light of the Day', '40cm x 40cm', 2)
-                    +gallery-item('assets/gallery/2024/08.jpg', 'Raspberry Ripple Dusk', '40cm x 40cm', 2)
-                    +gallery-item('assets/gallery/2024/09.jpg', 'Eventide Over the Sound', '40cm x 40cm', 2)
-                    +gallery-item('assets/gallery/2024/10.jpg', 'Rose on Teal', '40cm x 40cm', 1)
+            .gallery-scroll
+
+                // Two paintings per row
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2024/01.jpg', 'Step into the Light', '80cm x 80cm', 2)
+                            +gallery-item('assets/gallery/2024/02.jpg', 'The Colours that Murmur in the Sky', '80cm x 80cm', 2)
+
+                // Full-width paintings
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2024/03.jpg', 'The Clouds are the Catchers of Dreams', '50cm x 100cm', 1)
+
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2024/04.jpg', 'Blood Red Hope for Tomorrow', '50cm x 100cm', 1)
+
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2024/05.jpg', 'The Heavy Weight of Beauty', '50cm x 100cm', 1)
+
+                // Two square paintings per row
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2024/06.jpg', 'Brilliant Rose Cloud', '40cm x 40cm', 2)
+                            +gallery-item('assets/gallery/2024/07.jpg', 'Last Light of the Day', '40cm x 40cm', 2)
+
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2024/08.jpg', 'Raspberry Ripple Dusk', '40cm x 40cm', 2)
+                            +gallery-item('assets/gallery/2024/09.jpg', 'Eventide Over the Sound', '40cm x 40cm', 2)
+
+                // Final full-width painting
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2024/10.jpg', 'Rose on Teal', '40cm x 40cm', 1)

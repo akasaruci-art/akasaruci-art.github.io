@@ -1,16 +1,44 @@
+
 extends includes/main.pug
 
 block content
-    // Section - Canvas
     section.gallery-section
         #canvas
-            .container.px-4.px-lg-5.gallery-padding
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    +gallery-item('assets/gallery/2025/01.jpg', 'Burning Sky', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2025/02.jpg', 'Radiant Field of Love', '80cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2025/03.jpg', 'Radiating Warmth', '50cm x 50cm', 2)
-                    +gallery-item('assets/gallery/2025/04.jpg', 'The Calm of the Evening', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2025/05.jpg', 'Gentle Tide', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2025/06.jpg', 'Rainbow of Brilliant Rose Eventide', '40cm x 40cm', 2)
-                    +gallery-item('assets/gallery/2025/07.jpg', 'Warming End to the Day', '40cm x 40cm', 2)
-                    +gallery-item('assets/gallery/2025/08.jpg', 'Down the Sound to Islay and Jura', '40cm x 80cm', 1)
+            .gallery-scroll
+
+                // Full-width painting
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2025/01.jpg', 'Burning Sky', '50cm x 100cm', 1)
+
+                // Two paintings per row
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2025/02.jpg', 'Radiant Field of Love', '80cm x 80cm', 2)
+                            +gallery-item('assets/gallery/2025/03.jpg', 'Radiating Warmth', '50cm x 50cm', 2)
+
+                // Full-width paintings
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2025/04.jpg', 'The Calm of the Evening', '50cm x 100cm', 1)
+
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2025/05.jpg', 'Gentle Tide', '50cm x 100cm', 1)
+
+                // Two square paintings per row
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2025/06.jpg', 'Rainbow of Brilliant Rose Eventide', '40cm x 40cm', 2)
+                            +gallery-item('assets/gallery/2025/07.jpg', 'Warming End to the Day', '40cm x 40cm', 2)
+
+                // Final panoramic painting
+                .gallery-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/2025/08.jpg', 'Down the Sound to Islay and Jura', '40cm x 80cm', 1)

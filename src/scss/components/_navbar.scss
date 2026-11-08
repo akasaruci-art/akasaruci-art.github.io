@@ -175,10 +175,6 @@
                     outline: none;
                 }
             }
-
-            #top-name {
-                display: block;
-            }
         }
     }
 }
@@ -206,6 +202,23 @@
             &.show {
                 color: $white;
             }
+            white-space: nowrap;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #top-name {
+        display: none;
+    }
+}
+
+// Smaller navbar text on medium desktop screens
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #mainNav {
+        .navbar-nav .nav-link, .navbar-brand {
+            font-size: 1.2rem;
+            padding: 1.5rem 0.75rem;
         }
     }
 }
