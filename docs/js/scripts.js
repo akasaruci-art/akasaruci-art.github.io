@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Highlight the current page in the navbar
     const currentPage = window.location.pathname.replace(/\/$/, '') || '/';
 
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item').forEach(link => {
         const linkPage = new URL(link.href).pathname.replace(/\/$/, '') || '/';
 
         if (linkPage === currentPage) {

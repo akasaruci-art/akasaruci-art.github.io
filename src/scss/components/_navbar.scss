@@ -92,6 +92,13 @@
         }
     }
 
+    // Highlight the current page in dropdown menus
+    .navbar-nav .dropdown-item.active {
+        color: $primary;
+        background-color: $gray-200;
+        font-weight: 600;
+    }
+
     // Desktop navbar
     @include media-breakpoint-up(lg) {
         padding-top: 0;
@@ -222,3 +229,4 @@
         }
     }
 }
+

@@ -12211,6 +12211,11 @@ body {
   color: #183b71;
   background-color: #e9ecef;
 }
+#mainNav .navbar-nav .dropdown-item.active, #homeNav .navbar-nav .dropdown-item.active {
+  color: #183b71;
+  background-color: #e9ecef;
+  font-weight: 600;
+}
 @media (min-width: 992px) {
   #mainNav, #homeNav {
     padding-top: 0;
