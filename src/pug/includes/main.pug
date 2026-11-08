@@ -1,0 +1,18 @@
+include ../includes/mixins/navbar.pug
+include ../includes/mixins/gallery-item.pug
+
+doctype html
+html(lang='en')
+    include ../includes/header.pug
+
+    body#page-top.d-flex.flex-column.min-vh-100
+
+        block navbar
+            +navbar()
+
+        // Page-specific content
+        main.flex-grow-1
+            block content
+
+        // Footer
+        include ../includes/footer.pug

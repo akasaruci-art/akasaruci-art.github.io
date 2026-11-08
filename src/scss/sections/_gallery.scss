@@ -4,8 +4,16 @@
 
 .gallery-section {
 
-    .full-width-gallery-image > img{
-        max-height: 90vh;
+    .gallery-padding {
+        padding-top: 1.5rem;
+    }
+
+    .gallery-container > img {
+        max-height: 50vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     .gallery-container {
@@ -22,19 +30,5 @@
         color: $gray-600;
         text-align: center;
         margin-bottom: 0rem;
-    }
-
-    .sold-container {
-        position: relative;
-        margin-top: 1rem;
-    }
-
-    .sold {
-        height: 20px;
-        width: 20px;
-        background-color: #e00;
-        border-radius: 50%;
-        position: absolute;
-        right: 0;
     }
 }

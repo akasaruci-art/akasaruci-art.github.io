@@ -1,0 +1,22 @@
+extends includes/main.pug
+block content
+
+    section.gallery-section
+        #canvas
+            .container.px-4.px-lg-5.gallery-padding
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    +gallery-item('assets/gallery/2023/01.jpg', 'Maroon Eventide', '20cm x 20cm', 3)
+                    +gallery-item('assets/gallery/2023/02.jpg', 'The Paps at Dusk', '20cm x 20cm', 3)
+                    +gallery-item('assets/gallery/2023/03.jpg', 'Dark Sound', '20cm x 20cm', 3)
+
+        .inner-section.about-section
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-12.about-container.align-vertically
+                        p Current Exhibitions: 
+                        ul
+                            li Laura Wilder Gallery, Glasgow, December 2026
+                            li The Framing Workshop, Glasgow, December 2026
+                            li Winter Show, Annan Gallery, December 2026
+                            li Winter Exhibition, Strathearn Gallery, Crieff, November 2026
+                            li Glasgow Women's Art Collective, New Glasgow Society, Glasgow, November 2026

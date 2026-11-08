@@ -1,36 +1,18 @@
-extends layouts/main.pug
+extends includes/main.pug
 
 block content
     // Section - Canvas
     section.gallery-section
         #canvas
-            .container.px-4.px-lg-5
-
-                // Two-column gallery
+            .container.px-4.px-lg-5.gallery-padding
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    +gallery-item('assets/gallery/2024/01.jpg', 'Imbued with Love', '80cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2024/02.jpg', 'Step into the Light', '80cm x 80cm', 2, true)
-                    +gallery-item('assets/gallery/2024/03.jpg', 'High in the Sky', '80cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2024/06.jpg', 'Colbalt Violet Glow', '80cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2024/07.jpg', 'The Colours that Murmur in the Sky', '80cm x 80cm', 2)
-
-                // Full-width gallery
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    +gallery-item('assets/gallery/2024/08.jpg', 'The Clouds are the Catchers of Dreams', '50cm x 100cm', 1, true)
-                    +gallery-item('assets/gallery/2024/09.jpg', 'Blood Red Hope for Tomorrow', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2024/10.jpg', 'The Heavy Weight of Beauty', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2024/11.jpg', 'Kilmory Bay Resting', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2024/12.jpg', 'Gentle Violet Clouds', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2024/13.jpg', 'Light Breaks Through', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2024/14.jpg', 'The Breeze bring with it the Lightest Touch', '50cm x 100cm', 1)
-
-                // Three-column gallery
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    +gallery-item('assets/gallery/2024/15.jpg', 'Brilliant Rose Cloud', '40cm x 40cm', 3)
-                    +gallery-item('assets/gallery/2024/16.jpg', 'Last Light of the Day', '40cm x 40cm', 3)
-                    +gallery-item('assets/gallery/2024/17.jpg', 'Raspberry Ripple Dusk', '40cm x 40cm', 3)
-                    +gallery-item('assets/gallery/2024/18.jpg', 'Magenta Light Flows', '40cm x 40cm', 3)
-                    +gallery-item('assets/gallery/2024/19.jpg', 'Rose on Teal', '40cm x 40cm', 3)
-                    +gallery-item('assets/gallery/2024/20.jpg', 'Eventide Over the Sound', '40cm x 40cm', 3)
-                    +gallery-item('assets/gallery/2024/21.jpg', 'Sunset over Jura', '40cm x 40cm', 3, true)
-                    +gallery-item('assets/gallery/2024/22.jpg', 'Warmth on the Horizon', '40cm x 40cm', 3)
+                    +gallery-item('assets/gallery/2024/01.jpg', 'Step into the Light', '80cm x 80cm', 2)
+                    +gallery-item('assets/gallery/2024/02.jpg', 'The Colours that Murmur in the Sky', '80cm x 80cm', 2)
+                    +gallery-item('assets/gallery/2024/03.jpg', 'The Clouds are the Catchers of Dreams', '50cm x 100cm', 1)
+                    +gallery-item('assets/gallery/2024/04.jpg', 'Blood Red Hope for Tomorrow', '50cm x 100cm', 1)
+                    +gallery-item('assets/gallery/2024/05.jpg', 'The Heavy Weight of Beauty', '50cm x 100cm', 1)
+                    +gallery-item('assets/gallery/2024/06.jpg', 'Brilliant Rose Cloud', '40cm x 40cm', 2)
+                    +gallery-item('assets/gallery/2024/07.jpg', 'Last Light of the Day', '40cm x 40cm', 2)
+                    +gallery-item('assets/gallery/2024/08.jpg', 'Raspberry Ripple Dusk', '40cm x 40cm', 2)
+                    +gallery-item('assets/gallery/2024/09.jpg', 'Eventide Over the Sound', '40cm x 40cm', 2)
+                    +gallery-item('assets/gallery/2024/10.jpg', 'Rose on Teal', '40cm x 40cm', 1)

@@ -1,4 +1,3 @@
-
 'use strict';
 
 // Scripts
@@ -38,12 +37,12 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // Collapse responsive navbar when a navigation link is clicked
+    // Collapse responsive navbar when a normal navigation link is clicked
     const navbarToggler = document.querySelector('.navbar-toggler');
 
     if (navbarToggler) {
         const responsiveNavItems = document.querySelectorAll(
-            '#navbarResponsive .nav-link'
+            '#navbarResponsive .nav-link:not(.dropdown-toggle)'
         );
 
         responsiveNavItems.forEach(navItem => {

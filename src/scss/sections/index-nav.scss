@@ -1,0 +1,105 @@
+// 
+// Index Nav
+// 
+
+.index-card-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+
+    .index-card-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .index-card-overlay {
+        position: absolute;
+        inset: 0;
+        opacity: 0.75;
+        transition: opacity 0.6s ease;
+    }
+
+    .index-card-overlay-1 {
+        background-color: #741b2f;
+    }
+
+    .index-card-overlay-2 {
+        background-color: #483185;
+    }
+
+    .index-card-overlay-3 {
+        background-color: #24588a;
+    }
+
+    .index-card-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: $white;
+        text-align: center;
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    &:hover,
+    &:focus-visible {
+        .index-card-overlay {
+            opacity: 0;
+        }
+    }
+}
+
+// Smaller text on mobile screens
+@media (max-width: 992px) {
+    .index-card-container {
+        .index-card-text {
+            font-size: 1.5rem;
+        }
+    }
+    .gallery-section {
+        .gallery-container {
+            padding: 1rem;
+        }
+    }
+    .gallery-section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .index-card-container {
+        .index-card-text {
+            font-size: 1.2rem;
+        }
+    }
+    .gallery-section {
+        .gallery-container {
+            padding: 0.8rem;
+        }
+    }
+    .gallery-section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .index-card-container {
+        .index-card-text {
+            font-size: 0.8rem;
+        }
+    }
+    .gallery-section {
+        .gallery-container {
+            padding: 0.5rem;
+        }
+    }
+    .gallery-section {
+        padding: 2rem 0rem;
+    }
+}

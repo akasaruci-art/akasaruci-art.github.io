@@ -1,0 +1,54 @@
+
+mixin navbar(homepage = false)
+    if homepage
+        nav#homeNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+            .container.px-4.px-lg-5
+                a.navbar-brand#top-name(href='/') Jules Jackson
+                +navbarContent()
+    else
+        nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.navbar-shrink
+            .container.px-4.px-lg-5
+                a.navbar-brand(href='/') Jules Jackson
+                +navbarContent()
+
+mixin navbarContent()
+    button.navbar-toggler.navbar-toggler-right(
+        type='button',
+        data-bs-toggle='collapse',
+        data-bs-target='#navbarResponsive',
+        aria-controls='navbarResponsive',
+        aria-expanded='false',
+        aria-label='Toggle navigation'
+    )
+        | Menu
+        i.fas.fa-bars
+
+    #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ms-auto
+            li.nav-item
+                a.nav-link(href='/available-work.html') Available Work
+            li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside' aria-expanded='false') Exhibitions
+                ul.dropdown-menu
+                    li
+                        a.dropdown-item(href='/current-exhibitions.html') Current
+                    li
+                        a.dropdown-item(href='/past-exhibitions.html') Past
+                    li
+                        a.dropdown-item(href='/gwac.html') GWAC
+            li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside',aria-expanded='false') Archive
+                ul.dropdown-menu
+                    li
+                        a.dropdown-item(href='/2026.html') 2026
+                    li
+                        a.dropdown-item(href='/2025.html') 2025
+                    li
+                        a.dropdown-item(href='/2024.html') 2024
+                    li
+                        a.dropdown-item(href='/2023.html') 2023
+            li.nav-item
+                a.nav-link(href='/about.html') About
+
+            li.nav-item
+                a.nav-link(href='/contact.html') Contact

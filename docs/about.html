@@ -16,7 +16,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body class="d-flex flex-column min-vh-100" id="page-top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="/">Jules Jackson</a>
@@ -26,73 +26,63 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="/2025.html">2025</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/2024.html">2024</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/2023.html">2023</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/available-work.html">Available Work</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Exhibitions</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/current-exhibitions.html">Current</a></li>
+                                <li><a class="dropdown-item" href="/past-exhibitions.html">Past</a></li>
+                                <li><a class="dropdown-item" href="/gwac.html">GWAC</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Archive</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/2026.html">2026</a></li>
+                                <li><a class="dropdown-item" href="/2025.html">2025</a></li>
+                                <li><a class="dropdown-item" href="/2024.html">2024</a></li>
+                                <li><a class="dropdown-item" href="/2023.html">2023</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/gwac.html">GWAC</a></li>
                         <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Page-specific content-->
-        <!-- About-->
-        <section class="about-section extra-about-padding grey-background text-center">
-            <div class="inner-section">
-                <div class="container px-4 px-lg-5">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-xl-6 col-12 about-container"><img class="img-fluid" src="assets/gallery/about/sunset.jpg" alt="..." /></div>
-                        <div class="col-xl-6 col-12 about-container align-vertically"><h3 class="mb-4">"My work is inspired by the sea, skies and landscape of Knapdale, Argyll, where I spend as much time as I can walking, exploring, absorbing and storing up ideas for paintings."</h3></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-section white-background text-center">
-            <div class="inner-section">
-                <div class="container px-4 px-lg-5">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-xl-6 col-12 about-container align-vertically"><p>"I use oil paint to express my experience of the sea, the sky, and the land in-between. My painting process is intuitive and is informed by what I call my "heart response" or "felt-sense", my internal landscape's reflection on the external landscape, as opposed to a striving for a figurative or literal depiction. In the work I am investigating a visual language, using colour, texture and mark-making to convey a powerful elemental energy.</p></div>
-                        <div class="col-xl-6 col-12 about-container"><img class="img-fluid" src="assets/gallery/about/sky.jpg" alt="..." /></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-section grey-background text-center">
-            <div class="inner-section">
-                <div class="container px-4 px-lg-5">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-xl-6 col-12 about-container"><img class="img-fluid" src="assets/gallery/about/sea.jpg" alt="..." /></div>
-                        <div class="col-xl-6 col-12 about-container align-vertically"><p>I am trying to capture an expansiveness, a spaciousness or other worldliness, the ephemeral quality of the ever-changing light, the weather, my emotional response, and the magic that this remote, largely unpopulated landscape elicits in me. I am inviting the viewer to enter the space I have created and reconnect with their own experiential memories of being surrounded by the vastness of nature."</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-section white-background text-center">
-            <div class="inner-section">
-                <div class="container px-4 px-lg-5">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-xl-6 col-12 about-container align-vertically">
-                            <h3 class="mb-4">Background</h3>
-                            <p>After leaving art school, where Jules studied painting, she worked in Community Arts before training to be an Art Psychotherapist. She worked for many years for the NHS in Mental Health and now is painting full-time and loving it.</p>
+        <main class="flex-grow-1">
+            <!-- About-->
+            <section class="about-section extra-about-padding text-center">
+                <div class="inner-section">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-12 about-container"><img class="img-fluid" src="assets/gallery/about/on-the-coast.jpg" alt="Me on the coast of Scotland" /></div>
+                            <div class="col-12 about-container align-vertically">
+                                <p class="left-align">After studying painting at art school, I initially worked in Community Arts before becoming an Art Psychotherapist. I worked for the NHS for many years using art materials to facilitate patients expressing, exploring, understanding, and ultimately improving their mental health before returning to painting full-time.</p>
+                                <p class="left-align">In my paintings I am exploring my felt-experience of the sea, the sky, and the land in-between. My painting process is intuitive and is informed by what I call my 'heart response', my internal landscape's reflection to a remote external landscape, as opposed to a striving for a figurative or literal depiction. In my paintings I am aiming to capture an expansiveness, a limitlessness, a spaciousness or other worldliness, of the ephemeral quality of the ever-changing light and elemental energies. I am drawn to the sense of isolation and wonder one can experience when confronted by the immeasurable beauty and power of nature associated with the Romantic landscape painting tradition. I am based in Glasgow but spend a lot of time on the coast of Argyll, walking and absorbing this remote part of the Scottish coastline to later translate into painted pieces.</p>
+                                <p class="left-align">More recently, I have moved from working on larger oil on canvas pieces to smaller mixed media pieces. I feel this more immediate approach is enabling me to continue to the explore light, colour and beauty of the landscape which I love but is allowing me to bring a different energy and vitality to my work. The above photo was taken at my favourite place overlooking the Sound of Jura from Knapdale, Argyll.</p>
+                            </div>
                         </div>
-                        <div class="col-xl-6 col-12 about-container"><img class="img-fluid" src="assets/gallery/about/working.jpg" alt="..." /></div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
         <!-- Footer-->
         <footer class="footer small text-center">
-            <div class="container px-4 px-lg-5 text-white">
+            <div class="container px-4 px-lg-5">
                 &copy; Jules Jackson
                 <script>
                     var CurrentYear = new Date().getFullYear();
                     document.write(CurrentYear);
                 </script>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-5" href="https://www.instagram.com/julesakasarucijackson/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </footer>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>

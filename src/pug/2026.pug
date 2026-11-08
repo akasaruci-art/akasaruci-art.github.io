@@ -1,0 +1,15 @@
+extends includes/main.pug
+
+block content
+    // Section - Canvas
+    section.gallery-section
+        #canvas
+            .container.px-4.px-lg-5.gallery-padding
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    +gallery-item('assets/gallery/2026/01.jpg', 'Burning Passion', '40cm x 80cm', 1)
+                    +gallery-item('assets/gallery/2026/02.jpg', 'Radiant Field of Love', '50cm x 50cm', 2)
+                    +gallery-item('assets/gallery/2026/03.jpg', 'Floating on the Pink Cloud', '50cm x 50cm', 2)
+                    +gallery-item('assets/gallery/2026/04.jpg', 'Echoes of Cobalt Violet', '50cm x 50cm', 1)
+                    +gallery-item('assets/gallery/2026/05.jpg', 'Glorious Truth', '50cm x 70cm', 2)
+                    +gallery-item('assets/gallery/2026/06.jpg', 'Let Go into the Light', '50cm x 70cm', 2)
+                    +gallery-item('assets/gallery/2026/07.jpg', 'The Gloaming', '60cm x 60cm', 1)

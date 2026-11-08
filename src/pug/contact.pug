@@ -1,27 +1,30 @@
-extends layouts/main.pug
+extends includes/main.pug
 block content
         
     // Contact
-    section.contact-section.extra-about-padding.grey-background.text-center
+    section.contact-section.extra-about-padding.text-center
         .inner-section
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-xl-6.col-12.about-container.align-vertically
                         .row.gx-4.gx-lg-5.justify-content-center
                             .col-xl-10.col-12.about-container.align-vertically
-                                h3.mb-4 Please get in touch if you would like to know more about my work, are interested in buying a painting, or exhibiting my work.
-                        .row.gx-4.gx-lg-5.justify-content-center
-                            .col-md-6.mb-3.mb-md-0
+                                h4.mb-4 Please get in touch if you wish to know more about my art, you are interested in buying a painting, or you would like to discuss exhitibing my work.
+                        .row.gx-4.gx-lg-5.justify-content-center.card-padding
+                            .col-md-6.mb-3.mb-md-0.card-height
                                 .card.py-4.h-100.bg-white
                                     .card-body.text-center
-                                        i.fas.fa-envelope.text-primary.mb-2
-                                        h4.text-uppercase.m-0.text-black-50 Email
-                                        hr.my-4.mx-auto
+                                        h4.m-0.text-black-50 Email
                                         p.text-black-50
                                             a(href='mailto:jjkilmory@gmail.com') jjkilmory@gmail.com
-                        .social.d-flex.justify-content-center
-                            a.mx-5(href='https://www.instagram.com/julesakasarucijackson/')
-                                i.fab.fa-instagram
+                        .row.gx-4.gx-lg-5.justify-content-center.card-padding
+                            .col-md-6.mb-3.mb-md-0.card-height
+                                .card.py-4.h-100.bg-white
+                                    .card-body.text-center
+                                        h4.m-0.text-black-50 Instagram
+                                        .social.d-flex.justify-content-center
+                                            a.mx-5(href='https://www.instagram.com/julesakasarucijackson/')
+                                                i.fab.fa-instagram
                         
                     .col-xl-6.col-12.about-container
                         img.img-fluid(src='assets/gallery/contact/01.jpg', alt='...')

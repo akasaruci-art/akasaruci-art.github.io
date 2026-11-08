@@ -1,33 +1,43 @@
-// 
+//
 // Navbar
-// 
+//
 
 #mainNav, #homeNav {
     min-height: 3.5rem;
-    background-color: $white;
+    background-color: $gray-100;
 
+    // Toggler
     .navbar-toggler {
         font-size: 80%;
         padding: 0.75rem;
-        color: $primary;
-        border: $border-width solid $primary;
+        color: $black;
+        border: $border-width solid $black;
 
         &:focus {
             outline: none;
+            box-shadow: none;
         }
     }
 
+    // Brand
     .navbar-brand {
         color: $black;
         font-weight: 600;
         padding: 0.9rem 0;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $primary;
+        }
     }
 
+    // Navigation links
     .navbar-nav {
         .nav-item {
-            width: 7rem;
+            min-width: 7rem;
+
             &:hover {
-                color: $primary;
                 outline: none;
                 background-color: transparent;
             }
@@ -38,12 +48,51 @@
                 background-color: transparent;
             }
         }
+
+        .nav-link {
+            color: $black;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $primary;
+            }
+        }
+
+        // Dropdown toggle
+        .nav-link.dropdown-toggle {
+            color: $black;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.show {
+                color: $primary;
+            }
+        }
     }
 
-    #top-name {
-        display: none;
+    // Dropdown menu
+    .nav-item.dropdown {
+        .dropdown-menu {
+            width: 100%;
+            min-width: 100%;
+            background-color: $gray-100;
+
+            .dropdown-item {
+                color: $black;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $primary;
+                    background-color: $gray-200;
+                }
+            }
+        }
     }
 
+    // Desktop navbar
     @include media-breakpoint-up(lg) {
         padding-top: 0;
         padding-bottom: 0;
@@ -56,12 +105,10 @@
             padding: 0.5rem 0;
             color: $gray-300;
 
-            &:hover {
-                color: $black;
-            }
-
+            &:hover,
+            &:focus,
             &:active {
-                color: $black;
+                color: $white;
             }
         }
 
@@ -71,30 +118,42 @@
             padding: 2rem 1.5rem;
             color: $gray-300;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 color: $white;
-                font-weight: 600;
             }
 
             &:active {
                 color: $white;
-                font-weight: 600;
+                font-weight: 500;
             }
         }
 
-
+        // Shrunk navbar
         &.navbar-shrink {
-            background-color: $white;
+            background-color: $gray-100;
 
             .navbar-brand {
                 color: $black;
-                
-                &:hover {
-                    color: $primary;
-                }
-    
+
+                &:hover,
+                &:focus,
                 &:active {
                     color: $primary;
+                }
+            }
+
+            .navbar-nav {
+                .nav-link.dropdown-toggle {
+                    color: $black;
+                    font-weight: 500;
+
+                    &:hover,
+                    &:focus,
+                    &:active,
+                    &.show {
+                        color: $primary;
+                    }
                 }
             }
 
@@ -103,11 +162,8 @@
                 padding: 1.5rem 1.5rem 1.25rem;
                 border-bottom: 0.25rem solid transparent;
 
-                &:hover {
-                    color: $primary;
-                    font-weight: 500;
-                }
-
+                &:hover,
+                &:focus,
                 &:active {
                     color: $primary;
                     font-weight: 500;
@@ -119,8 +175,36 @@
                     outline: none;
                 }
             }
+
             #top-name {
                 display: block;
+            }
+        }
+    }
+}
+
+// Homepage navbar before scrolling
+@media (min-width: 992px) {
+    #homeNav:not(.navbar-shrink) {
+        .navbar-brand {
+            color: $white;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $white;
+            }
+        }
+
+        .navbar-nav .nav-link,
+        .navbar-nav .nav-link.dropdown-toggle {
+            color: $white;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.show {
+                color: $white;
             }
         }
     }
