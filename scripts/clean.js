@@ -5,10 +5,16 @@ const upath = require('upath');
 
 const destPath = upath.resolve(upath.dirname(__filename), '../docs');
 
-if (sh.test('-e', destPath)) {
-    const result = sh.rm('-rf', upath.join(destPath, '*'));
+if (sh.test('-d', destPath)) {
+    const pathsToClean = sh.ls('-A', destPath)
+        .filter(path => path !== 'CNAME');
 
-    if (result.code !== 0) {
-        throw new Error(`Failed to clean: ${destPath}`);
+    for (const path of pathsToClean) {
+        const target = upath.join(destPath, path);
+        const result = sh.rm('-rf', target);
+
+        if (result.code !== 0) {
+            throw new Error(`Failed to remove: ${target}`);
+        }
     }
 }
