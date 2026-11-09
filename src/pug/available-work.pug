@@ -1,31 +1,35 @@
+
 extends includes/main.pug
 
 block content
-    // Section - Canvas
     section.gallery-section
         #canvas
-            .container.px-4.px-lg-5
+            .gallery-scroll
 
-                // Two-column gallery
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    +gallery-item('assets/gallery/2025/01.jpg', 'Radiant Field of Love', '80cm x 80cm', 2, true)
-                    +gallery-item('assets/gallery/2025/02.jpg', 'Melting my Heart', '80cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2025/03.jpg', 'Radiating Warmth', '50cm x 50cm', 2)
-                    +gallery-item('assets/gallery/2025/13.jpg', 'Distant Shores', '30cm x 30cm', 2, true)
-                    +gallery-item('assets/gallery/2025/06.jpg', 'Calming Mauves', '40cm x 40cm', 2)
-                    +gallery-item('assets/gallery/2025/05.jpg', 'Brilliant Rose Dusk', '40cm x 40cm', 2)
+                // Available work: intro and two rows of paintings
+                .gallery-slide.available-work-slide
+                    .container-fluid.px-4.px-lg-5.available-work-slide-internal
+                        .row.justify-content-center
+                            .col-12
+                                .gallery-intro
+                                    h4
+                                        | These paintings are being shown in the Winter Exhibition at the 
+                                        a(href='https://www.strathearn-gallery.com/exhibition/79531/2026-winter-mixed-exhibition') Strathearn Gallery.
+                                    h4
+                                        | Please 
+                                        a(href='https://strathearn-gallery.com/contact') contact
+                                        |  the gallery for more details.
 
-                // Full-width gallery
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    +gallery-item('assets/gallery/2025/08.jpg', 'The Calm of the Evening', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2025/09.jpg', 'Gentle Tide', '50cm x 100cm', 1)
-                    +gallery-item('assets/gallery/2025/10.jpg', 'Sky Expansion', '50cm x 100cm', 1)
+                        // First row
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/available-work/01.jpg', 'Blue Sound of Jura Study 1', '12cm x 12cm', 4)
+                            +gallery-item('assets/gallery/available-work/02.jpg', 'Blue Sound of Jura Study 2', '12cm x 12cm', 4)
+                            +gallery-item('assets/gallery/available-work/03.jpg', 'Blue Sound of Jura Study 3', '12cm x 12cm', 4)
+                            +gallery-item('assets/gallery/available-work/04.jpg', 'Blue Sound of Jura Study 4', '12cm x 12cm', 4)
 
-                // Two-column gallery
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    +gallery-item('assets/gallery/2025/12.jpg', 'Burning Eventide', '30cm x 30cm', 2)
-                    +gallery-item('assets/gallery/2025/04.jpg', 'The Power of Love', '80cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2025/14.jpg', 'Old Madder Isles', '30cm x 30cm', 2)
-                    +gallery-item('assets/gallery/2025/15.jpg', 'Fiery Light over The Sound', '30cm x 30cm', 2)
-                    +gallery-item('assets/gallery/2025/07.jpg', 'Uplifting Evening Clouds', '60cm x 80cm', 2)
-                    +gallery-item('assets/gallery/2025/11.jpg', 'The Horizon is Alight', '70cm x 90cm', 2)
+                        // Second row
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/available-work/05.jpg', 'Gentle Cloud', '30cm x 30cm', 4)
+                            +gallery-item('assets/gallery/available-work/06.jpg', 'Love in the Mist', '30cm x 30cm', 4)
+                            +gallery-item('assets/gallery/available-work/07.jpg', 'Textured Clouds', '30cm x 30cm', 4)
+                            +gallery-item('assets/gallery/available-work/08.jpg', 'Wide Horizon', '30cm x 30cm', 4)
