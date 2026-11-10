@@ -28,7 +28,7 @@
         &:hover,
         &:focus,
         &:active {
-            color: $primary;
+            color: $nav-active;
         }
     }
 
@@ -55,7 +55,7 @@
             &:hover,
             &:focus,
             &:active {
-                color: $primary;
+                color: $nav-active;
             }
         }
 
@@ -67,7 +67,7 @@
             &:focus,
             &:active,
             &.show {
-                color: $primary;
+                color: $nav-active;
             }
         }
     }
@@ -85,7 +85,7 @@
                 &:hover,
                 &:focus,
                 &:active {
-                    color: $primary;
+                    color: $nav-active;
                     background-color: $gray-200;
                 }
             }
@@ -94,9 +94,10 @@
 
     // Highlight the current page in dropdown menus
     .navbar-nav .dropdown-item.active {
-        color: $primary;
+        color: $nav-active;
         background-color: $gray-200;
-        font-weight: 600;
+        font-weight: 700;
+        border-left: 3px solid $nav-active;
     }
 
     // Desktop navbar
@@ -146,7 +147,7 @@
                 &:hover,
                 &:focus,
                 &:active {
-                    color: $primary;
+                    color: $nav-active;
                 }
             }
 
@@ -159,7 +160,7 @@
                     &:focus,
                     &:active,
                     &.show {
-                        color: $primary;
+                        color: $nav-active;
                     }
                 }
             }
@@ -172,12 +173,12 @@
                 &:hover,
                 &:focus,
                 &:active {
-                    color: $primary;
+                    color: $nav-active;
                     font-weight: 500;
                 }
 
                 &.active {
-                    color: $primary;
+                    color: $nav-active;
                     font-weight: 600;
                     outline: none;
                 }

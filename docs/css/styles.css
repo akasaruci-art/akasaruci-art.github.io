@@ -12174,7 +12174,7 @@ body {
   padding: 0.9rem 0;
 }
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:active, #homeNav .navbar-brand:hover, #homeNav .navbar-brand:focus, #homeNav .navbar-brand:active {
-  color: #183b71;
+  color: #0b8faa;
 }
 #mainNav .navbar-nav .nav-item, #homeNav .navbar-nav .nav-item {
   min-width: 7rem;
@@ -12191,13 +12191,13 @@ body {
   color: #000;
 }
 #mainNav .navbar-nav .nav-link:hover, #mainNav .navbar-nav .nav-link:focus, #mainNav .navbar-nav .nav-link:active, #homeNav .navbar-nav .nav-link:hover, #homeNav .navbar-nav .nav-link:focus, #homeNav .navbar-nav .nav-link:active {
-  color: #183b71;
+  color: #0b8faa;
 }
 #mainNav .navbar-nav .nav-link.dropdown-toggle, #homeNav .navbar-nav .nav-link.dropdown-toggle {
   color: #000;
 }
 #mainNav .navbar-nav .nav-link.dropdown-toggle:hover, #mainNav .navbar-nav .nav-link.dropdown-toggle:focus, #mainNav .navbar-nav .nav-link.dropdown-toggle:active, #mainNav .navbar-nav .nav-link.dropdown-toggle.show, #homeNav .navbar-nav .nav-link.dropdown-toggle:hover, #homeNav .navbar-nav .nav-link.dropdown-toggle:focus, #homeNav .navbar-nav .nav-link.dropdown-toggle:active, #homeNav .navbar-nav .nav-link.dropdown-toggle.show {
-  color: #183b71;
+  color: #0b8faa;
 }
 #mainNav .nav-item.dropdown .dropdown-menu, #homeNav .nav-item.dropdown .dropdown-menu {
   width: 100%;
@@ -12208,13 +12208,14 @@ body {
   color: #000;
 }
 #mainNav .nav-item.dropdown .dropdown-menu .dropdown-item:hover, #mainNav .nav-item.dropdown .dropdown-menu .dropdown-item:focus, #mainNav .nav-item.dropdown .dropdown-menu .dropdown-item:active, #homeNav .nav-item.dropdown .dropdown-menu .dropdown-item:hover, #homeNav .nav-item.dropdown .dropdown-menu .dropdown-item:focus, #homeNav .nav-item.dropdown .dropdown-menu .dropdown-item:active {
-  color: #183b71;
+  color: #0b8faa;
   background-color: #e9ecef;
 }
 #mainNav .navbar-nav .dropdown-item.active, #homeNav .navbar-nav .dropdown-item.active {
-  color: #183b71;
+  color: #0b8faa;
   background-color: #e9ecef;
-  font-weight: 600;
+  font-weight: 700;
+  border-left: 3px solid #0b8faa;
 }
 @media (min-width: 992px) {
   #mainNav, #homeNav {
@@ -12252,14 +12253,14 @@ body {
     color: #000;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:active, #homeNav.navbar-shrink .navbar-brand:hover, #homeNav.navbar-shrink .navbar-brand:focus, #homeNav.navbar-shrink .navbar-brand:active {
-    color: #183b71;
+    color: #0b8faa;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle, #homeNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle {
     color: #000;
     font-weight: 500;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle:hover, #mainNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle:focus, #mainNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle:active, #mainNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle.show, #homeNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle:hover, #homeNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle:focus, #homeNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle:active, #homeNav.navbar-shrink .navbar-nav .nav-link.dropdown-toggle.show {
-    color: #183b71;
+    color: #0b8faa;
   }
   #mainNav.navbar-shrink .nav-link, #homeNav.navbar-shrink .nav-link {
     color: #000;
@@ -12267,11 +12268,11 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover, #mainNav.navbar-shrink .nav-link:focus, #mainNav.navbar-shrink .nav-link:active, #homeNav.navbar-shrink .nav-link:hover, #homeNav.navbar-shrink .nav-link:focus, #homeNav.navbar-shrink .nav-link:active {
-    color: #183b71;
+    color: #0b8faa;
     font-weight: 500;
   }
   #mainNav.navbar-shrink .nav-link.active, #homeNav.navbar-shrink .nav-link.active {
-    color: #183b71;
+    color: #0b8faa;
     font-weight: 600;
     outline: none;
   }
@@ -12475,7 +12476,7 @@ body {
   padding: 5rem 2rem 2rem;
 }
 .gallery-section .gallery-slide .container-fluid, .gallery-section .gallery-slide .container-sm, .gallery-section .gallery-slide .container-md, .gallery-section .gallery-slide .container-lg, .gallery-section .gallery-slide .container-xl, .gallery-section .gallery-slide .container-xxl {
-  transform: translateY(-2rem);
+  transform: translateY(-5rem);
 }
 .gallery-section .gallery-container {
   padding: 1rem;
@@ -12567,10 +12568,6 @@ body {
 }
 .available-work-slide .image-description {
   font-size: 0.8rem;
-}
-
-.available-work-slide-internal {
-  transform: translateY(-4rem) !important;
 }
 
 @media (max-width: 1199.98px) {
