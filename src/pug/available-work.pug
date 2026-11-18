@@ -7,7 +7,7 @@ block content
             .gallery-scroll
 
                 // Available work: intro and two rows of paintings
-                .gallery-slide.available-work-slide
+                .gallery-slide.available-work-slide.available-work-show-arrow
                     .container-fluid.px-4.px-lg-5
                         .row.justify-content-center
                             .col-12
@@ -34,8 +34,12 @@ block content
                             +gallery-item('assets/gallery/available-work/strathearn/07.jpg', 'Textured Clouds', '30cm x 30cm', 4)
                             +gallery-item('assets/gallery/available-work/strathearn/08.jpg', 'Wide Horizon', '30cm x 30cm', 4)
 
+                    // Scroll hint
+                    .gallery-scroll-hint(aria-hidden='true')
+                        span ↓
+
                 // Available work: intro and two rows of paintings
-                .gallery-slide.available-work-slide
+                .gallery-slide.available-work-slide.available-work-show-arrow
                     .container-fluid.px-4.px-lg-5
                         .row.justify-content-center
                             .col-12
@@ -53,3 +57,32 @@ block content
                         .row.gx-0.justify-content-center
                             +gallery-item('assets/gallery/available-work/framing-workshop/01.jpg', 'Amber Sound of Jura Study 1', '12cm x 12cm', 4)
                             +gallery-item('assets/gallery/available-work/framing-workshop/02.jpg', 'Blue Sound of Jura Study 2', '12cm x 12cm', 4)
+                        
+                    // Scroll hint
+                    .gallery-scroll-hint(aria-hidden='true')
+                        span ↓
+
+                // Available work: intro and two rows of paintings
+                .gallery-slide.available-work-slide
+                    .container-fluid.px-4.px-lg-5
+                        .row.justify-content-center
+                            .col-12
+                                .gallery-intro
+                                    h4
+                                        | The work below is being shown in the 
+                                        a(href='https://annanart.com/exhibition/79290/the-winter-show-2026') Annan Gallery Winter Show.
+                                    h4
+                                        | Please 
+                                        a(href='https://annanart.com/contact') contact
+                                        | the gallery for more details.
+
+                        // First row
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/available-work/annan/01.jpg', 'Vermillion Sound of Jura Study 1', '12cm x 12cm', 4)
+                            +gallery-item('assets/gallery/available-work/annan/02.jpg', 'Vermillion Sound of Jura Study 2', '12cm x 12cm', 4)
+                            +gallery-item('assets/gallery/available-work/annan/02.jpg', 'Vermillion Sound of Jura Study 3', '12cm x 12cm', 4)
+                            +gallery-item('assets/gallery/available-work/annan/02.jpg', 'Vermillion Sound of Jura Study 4', '12cm x 12cm', 4)
+
+                        // Second row
+                        .row.gx-0.justify-content-center
+                            +gallery-item('assets/gallery/available-work/annan/05.jpg', 'Autumn Sun', '80cm x 80cm', 1)
