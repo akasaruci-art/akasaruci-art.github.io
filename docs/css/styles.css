@@ -12571,10 +12571,10 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .gallery-section .available-work-show-arrow {
+  .gallery-section .available-work-slide {
     position: relative;
   }
-  .gallery-section .available-work-show-arrow > .gallery-scroll-hint {
+  .gallery-section .available-work-slide > .gallery-scroll-hint {
     position: absolute;
     bottom: 8rem;
     left: 0;
